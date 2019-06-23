@@ -24,12 +24,7 @@ import javax.xml.bind.annotation.*;
 public class User {
   private long id;
   private String username;
-  private String firstName;
-  private String lastName;
-  private String email;
-  private String password;
-  private String phone;
-  private int userStatus;
+  private boolean isDeleted;
 
   @XmlElement(name = "id")
   public long getId() {
@@ -38,15 +33,6 @@ public class User {
 
   public void setId(long id) {
     this.id = id;
-  }
-
-  @XmlElement(name = "firstName")
-  public String getFirstName() {
-    return firstName;
-  }
-
-  public void setFirstName(String firstName) {
-    this.firstName = firstName;
   }
 
   @XmlElement(name = "username")
@@ -58,49 +44,12 @@ public class User {
     this.username = username;
   }
 
-  @XmlElement(name = "lastName")
-  public String getLastName() {
-    return lastName;
+  @XmlElement(name= "isDeleted")
+  public boolean isDeleted() {
+    return isDeleted;
   }
 
-  public void setLastName(String lastName) {
-    this.lastName = lastName;
-  }
-
-  @XmlElement(name = "email")
-  public String getEmail() {
-    return email;
-  }
-
-  public void setEmail(String email) {
-    this.email = email;
-  }
-
-  @XmlElement(name = "password")
-  public String getPassword() {
-    return password;
-  }
-
-  public void setPassword(String password) {
-    this.password = password;
-  }
-
-  @XmlElement(name = "phone")
-  public String getPhone() {
-    return phone;
-  }
-
-  public void setPhone(String phone) {
-    this.phone = phone;
-  }
-
-  @XmlElement(name = "userStatus")
-  @ApiModelProperty(value = "User Status", allowableValues = "1-registered,2-active,3-closed")
-  public int getUserStatus() {
-    return userStatus;
-  }
-
-  public void setUserStatus(int userStatus) {
-    this.userStatus = userStatus;
+  public void setDeleted(boolean deleted) {
+    isDeleted = deleted;
   }
 }
