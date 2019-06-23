@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/api-phone" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/inflector-jetty-webxml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/java-dropwizard" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/java-grails2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/java-jaxrs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/java-jaxrs-cxf" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/java-jaxrs-no-annotations" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/java-jaxrs-no-webxml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/java-jaxrs-subresource" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/java-jaxrs-wink" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/java-jersey-governator" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/java-jersey-jaxrs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/java-jersey-jaxrs-multi" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/java-jersey-jaxrs-multi-simple-servlet" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/java-jersey-jaxrs-multi-simple-webxml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/java-jersey-spring" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/java-jersey2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/java-jersey2-guice" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/java-mule" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/java-resteasy" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/java-resteasy-filter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/java-resteasy-spring" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/java-servlet" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java/swagger-petstore-v2" charset="UTF-8" />
+  </component>
+</project>
