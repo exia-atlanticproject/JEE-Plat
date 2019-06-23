@@ -90,12 +90,6 @@ public class UserData {
     User user = new User();
     user.setId(id);
     user.setUsername(username);
-    user.setFirstName(firstName);
-    user.setLastName(lastName);
-    user.setEmail(email);
-    user.setPassword("XXXXXXXXXXX");
-    user.setPhone(phone);
-    user.setUserStatus(userStatus);
     return user;
   }
 }
