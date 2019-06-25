@@ -8,12 +8,13 @@ services:
       - 23506:3306
     container_name: atlantis-jee-database
 
-  glassfish:
-    image: opavlova/glassfish:4.1-jdk8
+  payara:
+    image: payara/server-full
     volumes:
-      - ../glassfish:/usr/local/glassfish4/glassfish/domains/domain1/autodeploy/
+      - ../payara:/opt/payara/deployments
     ports:
       - 18080:8080
+      - 4848:4848
     container_name: altantis-jee-platform
 
   broker:
