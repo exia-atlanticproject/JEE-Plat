@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/java/api-phone/api-phone.iml" filepath="$PROJECT_DIR$/java/api-phone/api-phone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java/api-phone/swagger-java-jersey-multi-use-basepath-sample-app.iml" filepath="$PROJECT_DIR$/java/api-phone/swagger-java-jersey-multi-use-basepath-sample-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swagger-samples-project.iml" filepath="$PROJECT_DIR$/swagger-samples-project.iml" />
+    </modules>
+  </component>
+</project>
