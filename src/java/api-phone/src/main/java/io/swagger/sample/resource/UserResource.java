@@ -22,48 +22,17 @@ import io.swagger.sample.model.User;
 import io.swagger.sample.exception.ApiException;
 import io.swagger.sample.exception.NotFoundException;
 
-import java.util.Date;
 
+import javax.ws.rs.core.Context;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.*;
+import javax.ws.rs.core.UriInfo;
 
 @Path("/user")
 @Api(value="/user", description = "Operations about user")
 @Produces({"application/json", "application/xml"})
 public class UserResource {
   static UserData userData = new UserData();
-
-  @POST
-  @ApiOperation(value = "Create user",
-    notes = "This can only be done by the logged in user.",
-    position = 1)
-  public Response createUser(
-      @ApiParam(value = "Created user object", required = true) User user) {
-    userData.addUser(user);
-    return Response.ok().entity("").build();
-  }
-
-  @POST
-  @Path("/createWithArray")
-  @ApiOperation(value = "Creates list of users with given input array",
-    position = 2)
-  public Response createUsersWithArrayInput(@ApiParam(value = "List of user object", required = true) User[] users) {
-      for (User user : users) {
-          userData.addUser(user);
-      }
-      return Response.ok().entity("").build();
-  }
-
-  @POST
-  @Path("/createWithList")
-  @ApiOperation(value = "Creates list of users with given input array",
-    position = 3)
-  public Response createUsersWithListInput(@ApiParam(value = "List of user object", required = true) java.util.List<User> users) {
-      for (User user : users) {
-          userData.addUser(user);
-      }
-      return Response.ok().entity("").build();
-  }
 
   @PUT
   @Path("/{username}")
@@ -119,22 +88,15 @@ public class UserResource {
   @GET
   @Path("/login")
   @ApiOperation(value = "Logs user into the system",
-    response = String.class,
-    position = 6,
-    responseHeaders = {
-      @ResponseHeader(name = "X-Expires-After", description = "date in UTC when token expires", response = Date.class),
-      @ResponseHeader(name = "X-Rate-Limit", description = "calls per hour allowed by the user", response = Integer.class)
-    })
+    response = String.class)
   @ApiResponses(value = { @ApiResponse(code = 400, message = "Invalid username/password supplied") })
-  public Response loginUser(
-      @ApiParam(value = "The user name for login", required = true) @QueryParam("username") String username,
-      @ApiParam(value = "The password for login in clear text", required = true) @QueryParam("password") String password) {
+  public Response loginUser(@Context UriInfo uriInfo) {
 
-    Date date = new Date(System.currentTimeMillis() + 3600000);
+
+    System.out.println(uriInfo.toString());
+//    OAuth2AccessToken token = grant.withRedirect(new LazyUri(new Precoded("http://localhost"))).accessToken(executor);
     return Response.ok()
-      .header("X-Expires-After", date.toString())
-      .header("X-Rate-Limit", String.valueOf(5000))
-      .entity("logged in user session:" + System.currentTimeMillis())
+//      .entity("state: " + state + "\ncode: " + code)
       .build();
   }
 
