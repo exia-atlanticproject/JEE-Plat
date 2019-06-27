@@ -32,7 +32,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>jersey1</servlet-name>
-    <url-pattern>/api1/*</url-pattern>
+    <url-pattern>/*</url-pattern>
   </servlet-mapping>
 
   <servlet>
@@ -78,7 +78,7 @@
     </init-param>
     <init-param>
       <param-name>swagger.api.basepath</param-name>
-      <param-value>http://localhost:8002/api1</param-value>
+      <param-value>http://localhost:8090/</param-value>
     </init-param>
     <init-param>
       <param-name>swagger.use.path.based.config</param-name>
@@ -99,7 +99,7 @@
     </init-param>
     <init-param>
       <param-name>swagger.api.basepath</param-name>
-      <param-value>http://localhost:8002/api2</param-value>
+      <param-value>http://localhost:8090/api2</param-value>
     </init-param>
     <init-param>
       <param-name>swagger.use.path.based.config</param-name>

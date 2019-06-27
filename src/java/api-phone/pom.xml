@@ -45,7 +45,7 @@
           <stopKey>stopit</stopKey>
           <connectors>
             <connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
-              <port>8002</port>
+              <port>8090</port>
               <maxIdleTime>60000</maxIdleTime>
               <confidentialPort>8443</confidentialPort>
             </connector>
@@ -115,6 +115,14 @@
           </execution>
         </executions>
       </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>8</source>
+          <target>8</target>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
   <dependencies>
@@ -122,6 +130,12 @@
       <groupId>io.swagger</groupId>
       <artifactId>swagger-jersey-jaxrs</artifactId>
       <version>${swagger-version}</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/io.swagger.core.v3/swagger-annotations -->
+    <dependency>
+      <groupId>io.swagger.core.v3</groupId>
+      <artifactId>swagger-annotations</artifactId>
+      <version>2.0.8</version>
     </dependency>
     <dependency>
       <groupId>ch.qos.logback</groupId>
@@ -164,5 +178,28 @@
       <artifactId>junit</artifactId>
       <scope>test</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpclient</artifactId>
+      <version>4.5.9</version>
+    </dependency>
+    <dependency>
+      <groupId>com.auth0</groupId>
+      <artifactId>java-jwt</artifactId>
+      <version>3.8.1</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jboss.resteasy</groupId>
+      <artifactId>resteasy-jaxrs</artifactId>
+      <version>2.3.5.Final</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.konghq/unirest-java -->
+<!--    <dependency>-->
+<!--      <groupId>com.konghq</groupId>-->
+<!--      <artifactId>unirest-java</artifactId>-->
+<!--      <version>2.3.08</version>-->
+<!--      <scope>provided</scope>-->
+<!--    </dependency>-->
   </dependencies>
 </project>

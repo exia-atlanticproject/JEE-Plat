@@ -44,6 +44,6 @@ public class Bootstrap extends HttpServlet {
       .description("Operations about user")
       .externalDocs(new ExternalDocs("Find out more about our store", "http://swagger.io")));
 
-    new SwaggerContextService().withServletConfig(config).withBasePath("/api1").updateSwagger(swagger);
+    new SwaggerContextService().withServletConfig(config).withBasePath("/").updateSwagger(swagger);
   }
 }
