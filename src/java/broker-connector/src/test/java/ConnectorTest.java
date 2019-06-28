@@ -1,11 +1,7 @@
-import org.apache.activemq.ActiveMQConnection;
-import org.apache.activemq.command.ActiveMQTextMessage;
+import Broker.Connector;
 import org.junit.jupiter.api.Test;
 
 import javax.jms.JMSException;
-import javax.jms.Message;
-import javax.jms.MessageNotWriteableException;
-import javax.jms.TextMessage;
 
 import static org.junit.jupiter.api.Assertions.*;
 

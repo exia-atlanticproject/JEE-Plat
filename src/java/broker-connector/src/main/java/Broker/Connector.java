@@ -1,6 +1,7 @@
+package Broker;
+
 import model.MessageModel;
 import org.apache.activemq.ActiveMQConnectionFactory;
-import org.apache.activemq.ActiveMQSslConnectionFactory;
 import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,13 +34,13 @@ public class Connector implements MessageListener, ExceptionListener {
     private void init(String url) throws Exception {
         listeners = new HashMap<>();
         logger.info("Connection...");
-        ActiveMQSslConnectionFactory connectionFactory = new ActiveMQSslConnectionFactory(url);
-        connectionFactory.setTrustStore(getClass().getClassLoader().getResource("client.ts").getPath());
-        connectionFactory.setTrustStorePassword("password");
+        ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory(url);
+//        connectionFactory.setTrustStore(getClass().getClassLoader().getResource("client.ts").getPath());
+//        connectionFactory.setTrustStorePassword("password");
         connection = connectionFactory.createConnection("service", "safepw");
 
         connection.setClientID(id);
-        logger.info(String.format("Connector id = %s", id));
+        logger.info(String.format("main.Connector id = %s", id));
         connection.setExceptionListener(this);
         connection.start();
         logger.info(String.format("Connected to %S", url));
