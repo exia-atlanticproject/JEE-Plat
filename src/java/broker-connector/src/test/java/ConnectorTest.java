@@ -11,22 +11,22 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ConnectorTest {
 
-    private Connector brokerconnector;
-
-    {
-        try {
-            brokerconnector = new Connector(ActiveMQConnection.DEFAULT_BROKER_URL);
-        } catch (JMSException e) {
-            e.printStackTrace();
-        }
-    }
-
-    ;
     @org.junit.jupiter.api.BeforeEach
     void setUp() throws JMSException {
     }
 
     @org.junit.jupiter.api.AfterEach
     void tearDown() {
+    }
+
+    @Test
+    void connection() {
+        try {
+            Connector brokerConnector = new Connector("ssl://localhost:61714");
+            brokerConnector.disconnect();
+        } catch (Exception e) {
+            fail("Unable to connect");
+            e.printStackTrace();
+        }
     }
 }
