@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="b61070da-a27b-4105-822d-9de2bc3f3795" name="Default Changelist" comment="" />
-=======
     <list default="true" id="7f9da6a2-53ee-406e-b28c-1e41dd355dbd" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/artifacts/api_phone_war.xml" afterDir="false" />
@@ -126,7 +123,6 @@
       <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/util/ApiOriginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/util/ApiOriginFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
->>>>>>> broker-connector
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,24 +160,14 @@
   <component name="ProjectConfigurationFiles">
     <option name="files">
       <list>
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/.idea/JEE-Plat.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
         <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-=======
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
->>>>>>> broker-connector
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-<<<<<<< HEAD
-    <option name="x" value="953" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -210,7 +196,6 @@
     <panes>
       <pane id="ProjectPane" />
       <pane id="Scope" />
->>>>>>> broker-connector
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -237,43 +222,22 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-<<<<<<< HEAD
-      <changelist id="b61070da-a27b-4105-822d-9de2bc3f3795" name="Default Changelist" comment="" />
-      <created>1561754801686</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1561754801686</updated>
-      <workItem from="1561754802879" duration="117000" />
-      <workItem from="1561754921846" duration="5000" />
-      <workItem from="1561841160632" duration="163000" />
-      <workItem from="1561903772632" duration="97000" />
-=======
       <changelist id="7f9da6a2-53ee-406e-b28c-1e41dd355dbd" name="Default Changelist" comment="" />
       <created>1561632057875</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561632057875</updated>
       <workItem from="1561632059275" duration="674000" />
->>>>>>> broker-connector
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="382000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
-=======
     <option name="totallyTimeSpent" value="693000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="945" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25274727" />
->>>>>>> broker-connector
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -288,27 +252,15 @@
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-<<<<<<< HEAD
-      <window_info anchor="bottom" id="Terminal" order="10" />
-=======
       <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32942554" />
->>>>>>> broker-connector
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-<<<<<<< HEAD
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="JSON Utils" order="7" />
-      <window_info anchor="right" id="JSON Viewer" order="8" />
-=======
       <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.32967034" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
->>>>>>> broker-connector
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,5 +277,4 @@
       </provider>
     </entry>
   </component>
->>>>>>> broker-connector
 </project>
