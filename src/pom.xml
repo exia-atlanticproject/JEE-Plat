@@ -284,6 +284,7 @@
   </profiles>
   <modules>
     <module>java/api-phone</module>
+    <module>java/broker-connector</module>
   </modules>
   <reporting>
     <outputDirectory>target/site</outputDirectory>
