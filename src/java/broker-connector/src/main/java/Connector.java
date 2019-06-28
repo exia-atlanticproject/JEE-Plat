@@ -1,5 +1,6 @@
 import model.MessageModel;
 import org.apache.activemq.ActiveMQConnectionFactory;
+import org.apache.activemq.ActiveMQSslConnectionFactory;
 import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,20 +21,23 @@ public class Connector implements MessageListener, ExceptionListener {
     private Session session;
     private ConnectorStatus status = ConnectorStatus.DISCONNECTED;
 
-    public Connector(String url) throws JMSException {
+    public Connector(String url) throws Exception {
         this.init(url);
     }
 
-    public Connector(String url, boolean test) throws JMSException {
+    public Connector(String url, boolean test) throws Exception {
         this.id = "TEST";
         this.init(url);
     }
 
-    private void init(String url) throws JMSException {
+    private void init(String url) throws Exception {
         listeners = new HashMap<>();
         logger.info("Connection...");
-        ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory(url);
-        connection = connectionFactory.createConnection();
+        ActiveMQSslConnectionFactory connectionFactory = new ActiveMQSslConnectionFactory(url);
+        connectionFactory.setTrustStore(getClass().getClassLoader().getResource("client.ts").getPath());
+        connectionFactory.setTrustStorePassword("password");
+        connection = connectionFactory.createConnection("service", "safepw");
+
         connection.setClientID(id);
         logger.info(String.format("Connector id = %s", id));
         connection.setExceptionListener(this);
