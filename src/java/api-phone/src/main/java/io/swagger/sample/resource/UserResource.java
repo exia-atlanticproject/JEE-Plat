@@ -21,6 +21,8 @@ import io.swagger.sample.data.UserData;
 import io.swagger.sample.model.User;
 import io.swagger.sample.exception.ApiException;
 import io.swagger.sample.exception.NotFoundException;
+import org.dmfs.httpessentials.client.HttpRequestExecutor;
+import org.dmfs.httpessentials.httpurlconnection.HttpUrlConnectionExecutor;
 import org.dmfs.oauth2.client.*;
 import org.dmfs.oauth2.client.grants.AuthorizationCodeGrant;
 import org.dmfs.oauth2.client.grants.ImplicitGrant;
@@ -46,16 +48,6 @@ import javax.ws.rs.core.UriInfo;
 @Produces({"application/json", "application/xml"})
 public class UserResource {
   static UserData userData = new UserData();
-  static String authorization = "https://atlantisproject.b2clogin.com/atlantisproject.onmicrosoft.com/oauth2/v2.0/authorize?p=b2c_1_signuporsignin";
-  static String token = "https://atlantisproject.b2clogin.com/atlantisproject.onmicrosoft.com/oauth2/v2.0/token?p=b2c_1_signuporsignin";
-  static String clientId = "27fb84fe-4baf-4b6b-bfe7-f2d0638f2790";
-  static String secret = "Zg2^04#WjA#h%6Q{]eK53J&`";
-  static OAuth2Client client;
-  static {
-    OAuth2AuthorizationProvider provider = new BasicOAuth2AuthorizationProvider(
-            URI.create(authorization),
-            URI.create(token),
-            new Duration(1,0,3600) /* default expiration time in case the server doesn't return any */);
 
   @PUT
   @Path("/{username}")
