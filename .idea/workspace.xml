@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2b990f2-65a3-47b0-9036-211d634f5c2a" name="Default Changelist" comment="">
+    <list default="true" id="7f9da6a2-53ee-406e-b28c-1e41dd355dbd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/artifacts/api_phone_war.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/artifacts/api_phone_war_exploded.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_cxf_sample_war.xml" afterDir="false" />
@@ -97,801 +98,31 @@
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/api/Bootstrap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/api/Bootstrap2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/api/data/PetData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/api/data/StoreData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/api/data/UserData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/api/exception/ApiException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/api/exception/BadRequestException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/api/exception/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/api/model/ApiResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/api/model/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/api/model/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/api/model/Pet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/api/model/Tag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/api/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/api/resource/JavaRestResourceUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/api/resource/PetResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/api/resource/PetStoreResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/api/resource/SampleExceptionMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/api/resource/UserResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/api/util/ApiOriginFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/api-phone/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/Bootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/Bootstrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/Bootstrap2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/Bootstrap2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/data/PetData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/data/PetData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/data/StoreData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/data/StoreData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/data/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/data/UserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/exception/ApiException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/exception/ApiException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/exception/BadRequestException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/exception/BadRequestException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/exception/NotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/exception/NotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/model/ApiResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/model/ApiResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/model/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/model/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/model/Pet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/model/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/model/Tag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/resource/JavaRestResourceUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/resource/JavaRestResourceUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/resource/PetResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/resource/PetResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/resource/PetStoreResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/resource/PetStoreResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/resource/SampleExceptionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/resource/SampleExceptionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/resource/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/resource/UserResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/util/ApiOriginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/util/ApiOriginFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/data-controller/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/data-controller/src/main/java/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/data-controller/src/test/java/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-dropwizard-guice/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-dropwizard-guice/inflector.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-dropwizard-guice/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-dropwizard-guice/server.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-dropwizard-guice/src/main/java/io/swagger/samples/inflector/dropwizard/InflectorServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-dropwizard-guice/src/main/java/io/swagger/samples/inflector/dropwizard/InflectorServerConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-dropwizard-guice/src/main/java/io/swagger/samples/inflector/dropwizard/InflectorServerModule.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-dropwizard-guice/src/main/java/io/swagger/samples/inflector/dropwizard/controllers/SampleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-dropwizard-guice/src/main/java/io/swagger/samples/inflector/dropwizard/models/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-dropwizard-guice/src/main/java/io/swagger/samples/inflector/dropwizard/models/Pet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-dropwizard-guice/src/main/java/io/swagger/samples/inflector/dropwizard/models/Tag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-dropwizard-guice/src/main/java/io/swagger/samples/inflector/dropwizard/models/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-dropwizard-guice/src/main/swagger/swagger.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-dropwizard/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-dropwizard/inflector.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-dropwizard/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-dropwizard/server.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-dropwizard/src/main/java/io/swagger/samples/inflector/dropwizard/InflectorServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-dropwizard/src/main/java/io/swagger/samples/inflector/dropwizard/InflectorServerConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-dropwizard/src/main/java/io/swagger/samples/inflector/dropwizard/controllers/SampleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-dropwizard/src/main/java/io/swagger/samples/inflector/dropwizard/models/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-dropwizard/src/main/java/io/swagger/samples/inflector/dropwizard/models/Pet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-dropwizard/src/main/java/io/swagger/samples/inflector/dropwizard/models/Tag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-dropwizard/src/main/java/io/swagger/samples/inflector/dropwizard/models/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-dropwizard/src/main/swagger/swagger.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-jetty-webxml/inflector.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-jetty-webxml/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-jetty-webxml/src/main/java/io/swagger/sample/controllers/SampleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-jetty-webxml/src/main/java/io/swagger/sample/controllers/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-jetty-webxml/src/main/java/io/swagger/sample/models/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-jetty-webxml/src/main/java/io/swagger/sample/models/Pet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-jetty-webxml/src/main/java/io/swagger/sample/models/Tag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-jetty-webxml/src/main/java/io/swagger/sample/models/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-jetty-webxml/src/main/swagger/swagger.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-jetty-webxml/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-springboot-jersey/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-springboot-jersey/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-springboot-jersey/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-springboot-jersey/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-springboot-jersey/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-springboot-jersey/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-springboot-jersey/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-springboot-jersey/inflector.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-springboot-jersey/src/main/java/io/swagger/samples/inflector/springboot/InflectorApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-springboot-jersey/src/main/java/io/swagger/samples/inflector/springboot/config/InflectorConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-springboot-jersey/src/main/java/io/swagger/samples/inflector/springboot/controllers/SampleController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-springboot-jersey/src/main/java/io/swagger/samples/inflector/springboot/models/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-springboot-jersey/src/main/java/io/swagger/samples/inflector/springboot/models/Pet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-springboot-jersey/src/main/java/io/swagger/samples/inflector/springboot/models/Tag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-springboot-jersey/src/main/java/io/swagger/samples/inflector/springboot/models/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-springboot-jersey/src/main/resources/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-springboot-jersey/src/main/swagger/swagger.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/inflector-springboot-jersey/src/test/java/io/swagger/samples/inflector/springboot/InflectorApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-dropwizard/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-dropwizard/conf/swagger-sample.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-dropwizard/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-dropwizard/src/main/java/io/swagger/sample/ApiOriginFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-dropwizard/src/main/java/io/swagger/sample/SwaggerSampleApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-dropwizard/src/main/java/io/swagger/sample/SwaggerSampleConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-dropwizard/src/main/java/io/swagger/sample/data/PetData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-dropwizard/src/main/java/io/swagger/sample/data/StoreData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/data/StoreData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-dropwizard/src/main/java/io/swagger/sample/data/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/data/UserData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-dropwizard/src/main/java/io/swagger/sample/exception/ApiException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-dropwizard/src/main/java/io/swagger/sample/exception/BadRequestException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-dropwizard/src/main/java/io/swagger/sample/exception/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-dropwizard/src/main/java/io/swagger/sample/model/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-dropwizard/src/main/java/io/swagger/sample/model/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-dropwizard/src/main/java/io/swagger/sample/model/Pet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-dropwizard/src/main/java/io/swagger/sample/model/Tag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-dropwizard/src/main/java/io/swagger/sample/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-dropwizard/src/main/java/io/swagger/sample/resource/JavaRestResourceUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-dropwizard/src/main/java/io/swagger/sample/resource/PetResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/grails-app/conf/ApplicationResources.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/grails-app/conf/BootStrap.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/grails-app/conf/BuildConfig.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/grails-app/conf/Config.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/grails-app/conf/DataSource.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/grails-app/conf/UrlMappings.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/grails-app/conf/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/grails-app/conf/spring/resources.groovy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/grails-app/i18n/messages.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/grails-app/i18n/messages_cs_CZ.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/grails-app/i18n/messages_da.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/grails-app/i18n/messages_de.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/grails-app/i18n/messages_es.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/grails-app/i18n/messages_fr.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/grails-app/i18n/messages_it.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/grails-app/i18n/messages_ja.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/grails-app/i18n/messages_nl.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/grails-app/i18n/messages_pl.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/grails-app/i18n/messages_pt_BR.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/grails-app/i18n/messages_pt_PT.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/grails-app/i18n/messages_ru.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/grails-app/i18n/messages_sv.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/grails-app/i18n/messages_th.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/grails-app/i18n/messages_zh_CN.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/grails-app/views/error.gsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/grailsw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/grailsw.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/java/io/swagger/sample/Bootstrap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/java/io/swagger/sample/data/PetData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/java/io/swagger/sample/data/StoreData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/java/io/swagger/sample/data/UserData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/java/io/swagger/sample/exception/ApiException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/java/io/swagger/sample/exception/BadRequestException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/java/io/swagger/sample/exception/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/java/io/swagger/sample/model/ApiResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/java/io/swagger/sample/model/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/java/io/swagger/sample/model/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/java/io/swagger/sample/model/Pet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/java/io/swagger/sample/model/Tag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/java/io/swagger/sample/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/java/io/swagger/sample/resource/JavaRestResourceUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/java/io/swagger/sample/resource/PetResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/java/io/swagger/sample/resource/PetStoreResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/java/io/swagger/sample/resource/UserResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/java/io/swagger/sample/util/ApiAuthorizationFilterImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/java/io/swagger/sample/util/ApiOriginFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/WEB-INF/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/WEB-INF/sitemesh.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/WEB-INF/tld/c.tld" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/WEB-INF/tld/fmt.tld" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/WEB-INF/tld/grails.tld" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/WEB-INF/tld/spring.tld" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/css/print.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/css/reset.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/css/screen.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/css/typography.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/fonts/droid-sans-v6-latin-700.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/fonts/droid-sans-v6-latin-700.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/fonts/droid-sans-v6-latin-700.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/fonts/droid-sans-v6-latin-700.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/fonts/droid-sans-v6-latin-700.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/fonts/droid-sans-v6-latin-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/fonts/droid-sans-v6-latin-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/fonts/droid-sans-v6-latin-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/fonts/droid-sans-v6-latin-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/fonts/droid-sans-v6-latin-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/images/explorer_icons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/images/logo_small.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/images/pet_store_api.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/images/throbber.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/images/wordnik_api.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/lib/backbone-min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/lib/handlebars-2.0.0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/lib/highlight.7.3.pack.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/lib/jquery-1.8.0.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/lib/jquery.ba-bbq.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/lib/jquery.slideto.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/lib/jquery.wiggle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/lib/marked.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/lib/shred.bundle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/lib/swagger-client.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/lib/swagger-oauth.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/lib/underscore-min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/lib/underscore-min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/o2c.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/swagger-ui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/src/main/web-app/swagger-ui.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/wrapper/grails-wrapper-runtime-2.2.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/wrapper/grails-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-grails2/wrapper/springloaded-core-1.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-cxf/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-cxf/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-cxf/src/main/java/io/swagger/sample/data/PetData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-cxf/src/main/java/io/swagger/sample/data/StoreData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-cxf/src/main/java/io/swagger/sample/data/UserData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-cxf/src/main/java/io/swagger/sample/exception/ApiException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/exception/ApiException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-cxf/src/main/java/io/swagger/sample/exception/BadRequestException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/exception/BadRequestException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-cxf/src/main/java/io/swagger/sample/exception/NotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/exception/NotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-cxf/src/main/java/io/swagger/sample/model/ApiResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/model/ApiResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-cxf/src/main/java/io/swagger/sample/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/model/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-cxf/src/main/java/io/swagger/sample/model/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-cxf/src/main/java/io/swagger/sample/model/Pet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-cxf/src/main/java/io/swagger/sample/model/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/model/Tag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-cxf/src/main/java/io/swagger/sample/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-cxf/src/main/java/io/swagger/sample/resource/JavaRestResourceUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/resource/JavaRestResourceUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-cxf/src/main/java/io/swagger/sample/resource/PetResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-cxf/src/main/java/io/swagger/sample/resource/PetStoreResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-cxf/src/main/java/io/swagger/sample/resource/SampleExceptionMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-cxf/src/main/java/io/swagger/sample/resource/UserResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-cxf/src/main/java/io/swagger/sample/util/ApiOriginFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-cxf/src/main/resources/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-cxf/src/main/resources/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-cxf/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-cxf/src/main/webapp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-cxf/src/test/scala/ResourceListingIT.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-annotations/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-annotations/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-annotations/src/main/java/io/swagger/sample/Bootstrap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-annotations/src/main/java/io/swagger/sample/data/PetData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-annotations/src/main/java/io/swagger/sample/data/StoreData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-annotations/src/main/java/io/swagger/sample/data/UserData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-annotations/src/main/java/io/swagger/sample/exception/ApiException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-annotations/src/main/java/io/swagger/sample/exception/BadRequestException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-annotations/src/main/java/io/swagger/sample/exception/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-annotations/src/main/java/io/swagger/sample/model/ApiResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-annotations/src/main/java/io/swagger/sample/model/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-annotations/src/main/java/io/swagger/sample/model/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-annotations/src/main/java/io/swagger/sample/model/Pet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-annotations/src/main/java/io/swagger/sample/model/Tag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-annotations/src/main/java/io/swagger/sample/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-annotations/src/main/java/io/swagger/sample/resource/JavaRestResourceUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-annotations/src/main/java/io/swagger/sample/resource/PetResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-annotations/src/main/java/io/swagger/sample/resource/PetStoreResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-annotations/src/main/java/io/swagger/sample/resource/SampleExceptionMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-annotations/src/main/java/io/swagger/sample/resource/UserResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-annotations/src/main/java/io/swagger/sample/util/ApiAuthorizationFilterImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-annotations/src/main/java/io/swagger/sample/util/ApiOriginFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-annotations/src/main/resources/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-annotations/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-annotations/src/main/webapp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-annotations/src/test/scala/ResourceListingIT.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-webxml/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-webxml/conf/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/conf/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-webxml/logs/wordnik.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-webxml/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-webxml/src/main/java/io/swagger/sample/Bootstrap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-webxml/src/main/java/io/swagger/sample/data/PetData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-webxml/src/main/java/io/swagger/sample/data/StoreData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-webxml/src/main/java/io/swagger/sample/data/UserData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-webxml/src/main/java/io/swagger/sample/exception/ApiException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-webxml/src/main/java/io/swagger/sample/exception/BadRequestException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-webxml/src/main/java/io/swagger/sample/exception/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-webxml/src/main/java/io/swagger/sample/model/ApiResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-webxml/src/main/java/io/swagger/sample/model/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-webxml/src/main/java/io/swagger/sample/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/model/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-webxml/src/main/java/io/swagger/sample/model/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/model/Pet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-webxml/src/main/java/io/swagger/sample/model/Tag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-webxml/src/main/java/io/swagger/sample/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-webxml/src/main/java/io/swagger/sample/resource/JavaRestResourceUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-webxml/src/main/java/io/swagger/sample/resource/PetResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-webxml/src/main/java/io/swagger/sample/resource/PetStoreResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-webxml/src/main/java/io/swagger/sample/resource/UserResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-webxml/src/main/java/io/swagger/sample/util/ApiOriginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/util/ApiOriginFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-webxml/src/main/resources/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-webxml/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-webxml/src/main/webapp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-no-webxml/src/test/scala/ResourceListingIT.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-subresource/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-subresource/conf/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-subresource/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-subresource/src/main/java/io/swagger/sample/data/PetData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-subresource/src/main/java/io/swagger/sample/exception/ApiException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-subresource/src/main/java/io/swagger/sample/exception/BadRequestException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-subresource/src/main/java/io/swagger/sample/exception/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-subresource/src/main/java/io/swagger/sample/model/ApiResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-subresource/src/main/java/io/swagger/sample/model/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-subresource/src/main/java/io/swagger/sample/model/Owner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-subresource/src/main/java/io/swagger/sample/model/Pet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-subresource/src/main/java/io/swagger/sample/model/Tag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-subresource/src/main/java/io/swagger/sample/resource/JavaRestResourceUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-subresource/src/main/java/io/swagger/sample/resource/OwnerResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-subresource/src/main/java/io/swagger/sample/resource/PetResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-subresource/src/main/java/io/swagger/sample/resource/SampleExceptionMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-subresource/src/main/java/io/swagger/sample/util/ApiOriginFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-subresource/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-subresource/src/main/webapp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-wink/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-wink/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-wink/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-wink/runServer.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-wink/src/main/java/io/swagger/sample/Bootstrap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-wink/src/main/java/io/swagger/sample/data/PetData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-wink/src/main/java/io/swagger/sample/data/StoreData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-wink/src/main/java/io/swagger/sample/data/UserData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-wink/src/main/java/io/swagger/sample/exception/ApiException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-wink/src/main/java/io/swagger/sample/exception/BadRequestException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-wink/src/main/java/io/swagger/sample/exception/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-wink/src/main/java/io/swagger/sample/model/ApiResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-wink/src/main/java/io/swagger/sample/model/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-wink/src/main/java/io/swagger/sample/model/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-wink/src/main/java/io/swagger/sample/model/Pet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-wink/src/main/java/io/swagger/sample/model/Tag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-wink/src/main/java/io/swagger/sample/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-wink/src/main/java/io/swagger/sample/resources/JavaRestResourceUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-wink/src/main/java/io/swagger/sample/resources/PetResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-wink/src/main/java/io/swagger/sample/resources/PetStoreResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-wink/src/main/java/io/swagger/sample/resources/ResourceConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-wink/src/main/java/io/swagger/sample/resources/SampleExceptionMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-wink/src/main/java/io/swagger/sample/resources/UserResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-wink/src/main/java/io/swagger/sample/util/ApiAuthorizationFilterImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-wink/src/main/java/io/swagger/sample/util/ApiOriginFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-wink/src/main/resources/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-wink/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs-wink/src/main/webapp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs/conf/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs/src/main/java/io/swagger/sample/Bootstrap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs/src/main/java/io/swagger/sample/data/PetData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs/src/main/java/io/swagger/sample/data/StoreData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs/src/main/java/io/swagger/sample/data/UserData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs/src/main/java/io/swagger/sample/data/VehicleData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs/src/main/java/io/swagger/sample/exception/ApiException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs/src/main/java/io/swagger/sample/exception/BadRequestException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs/src/main/java/io/swagger/sample/exception/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs/src/main/java/io/swagger/sample/model/ApiResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs/src/main/java/io/swagger/sample/model/Car.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs/src/main/java/io/swagger/sample/model/Cat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs/src/main/java/io/swagger/sample/model/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs/src/main/java/io/swagger/sample/model/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs/src/main/java/io/swagger/sample/model/Pet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs/src/main/java/io/swagger/sample/model/Tag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs/src/main/java/io/swagger/sample/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs/src/main/java/io/swagger/sample/model/Vehicle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs/src/main/java/io/swagger/sample/resource/JavaRestResourceUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs/src/main/java/io/swagger/sample/resource/PetResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs/src/main/java/io/swagger/sample/resource/PetStoreResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs/src/main/java/io/swagger/sample/resource/UserResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs/src/main/java/io/swagger/sample/resource/VehicleResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs/src/main/java/io/swagger/sample/util/ApiOriginFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs/src/main/resources/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs/src/main/webapp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jaxrs/src/test/scala/ResourceListingIT.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-governator/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-governator/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-governator/src/main/java/io/swagger/sample/StartServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-governator/src/main/java/io/swagger/sample/data/PetData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-governator/src/main/java/io/swagger/sample/data/StoreData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-governator/src/main/java/io/swagger/sample/data/UserData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-governator/src/main/java/io/swagger/sample/exception/ApiException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-governator/src/main/java/io/swagger/sample/exception/BadRequestException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-governator/src/main/java/io/swagger/sample/exception/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-governator/src/main/java/io/swagger/sample/model/ApiResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-governator/src/main/java/io/swagger/sample/model/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-governator/src/main/java/io/swagger/sample/model/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-governator/src/main/java/io/swagger/sample/model/Pet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-governator/src/main/java/io/swagger/sample/model/Tag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-governator/src/main/java/io/swagger/sample/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-governator/src/main/java/io/swagger/sample/modules/PetstoreModule.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-governator/src/main/java/io/swagger/sample/modules/ServletConfigProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-governator/src/main/java/io/swagger/sample/modules/SwaggerModule.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-governator/src/main/java/io/swagger/sample/resources/PetResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-governator/src/main/java/io/swagger/sample/resources/PetStoreResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-governator/src/main/java/io/swagger/sample/resources/RootResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-governator/src/main/java/io/swagger/sample/resources/SampleExceptionMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-governator/src/main/java/io/swagger/sample/resources/UserResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-governator/src/main/java/io/swagger/sample/util/ApiOriginCorsFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-governator/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-governator/src/main/webapp/docs/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-servlet/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-servlet/conf/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-servlet/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-servlet/src/main/java/io/swagger/sample/Bootstrap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-servlet/src/main/java/io/swagger/sample/data/PetData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/data/PetData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-servlet/src/main/java/io/swagger/sample/data/StoreData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-servlet/src/main/java/io/swagger/sample/data/UserData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-servlet/src/main/java/io/swagger/sample/exception/ApiException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-servlet/src/main/java/io/swagger/sample/exception/BadRequestException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-servlet/src/main/java/io/swagger/sample/exception/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-servlet/src/main/java/io/swagger/sample/model/ApiResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-servlet/src/main/java/io/swagger/sample/model/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-servlet/src/main/java/io/swagger/sample/model/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-servlet/src/main/java/io/swagger/sample/model/Pet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-servlet/src/main/java/io/swagger/sample/model/Tag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-servlet/src/main/java/io/swagger/sample/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-servlet/src/main/java/io/swagger/sample/resource/JavaRestResourceUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-servlet/src/main/java/io/swagger/sample/resource/PetResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-servlet/src/main/java/io/swagger/sample/resource/SampleExceptionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/resource/SampleExceptionMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-servlet/src/main/java/io/swagger/sample/storeresource/PetStoreResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-servlet/src/main/java/io/swagger/sample/userresource/UserResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-servlet/src/main/java/io/swagger/sample/util/ApiAuthorizationFilterImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-servlet/src/main/java/io/swagger/sample/util/ApiOriginFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-servlet/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/resources/logback.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-servlet/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-servlet/src/main/webapp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-webxml/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-webxml/conf/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-webxml/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-webxml/src/main/java/io/swagger/sample/data/PetData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-webxml/src/main/java/io/swagger/sample/data/StoreData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-webxml/src/main/java/io/swagger/sample/data/UserData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-webxml/src/main/java/io/swagger/sample/exception/ApiException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-webxml/src/main/java/io/swagger/sample/exception/BadRequestException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-webxml/src/main/java/io/swagger/sample/exception/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-webxml/src/main/java/io/swagger/sample/model/ApiResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-webxml/src/main/java/io/swagger/sample/model/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-webxml/src/main/java/io/swagger/sample/model/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-webxml/src/main/java/io/swagger/sample/model/Pet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-webxml/src/main/java/io/swagger/sample/model/Tag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-webxml/src/main/java/io/swagger/sample/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-webxml/src/main/java/io/swagger/sample/resource/JavaRestResourceUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-webxml/src/main/java/io/swagger/sample/resource/PetResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-webxml/src/main/java/io/swagger/sample/resource/SampleExceptionMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-webxml/src/main/java/io/swagger/sample/resource/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/resource/UserResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-webxml/src/main/java/io/swagger/sample/storeresource/PetStoreResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-webxml/src/main/java/io/swagger/sample/util/ApiAuthorizationFilterImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-webxml/src/main/java/io/swagger/sample/util/ApiOriginFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-webxml/src/main/resources/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-webxml/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-simple-webxml/src/main/webapp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-use-basepath/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-use-basepath/conf/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-use-basepath/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-use-basepath/src/main/java/io/swagger/sample/Bootstrap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-use-basepath/src/main/java/io/swagger/sample/Bootstrap2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-use-basepath/src/main/java/io/swagger/sample/data/PetData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-use-basepath/src/main/java/io/swagger/sample/data/StoreData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-use-basepath/src/main/java/io/swagger/sample/data/UserData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-use-basepath/src/main/java/io/swagger/sample/exception/ApiException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-use-basepath/src/main/java/io/swagger/sample/exception/BadRequestException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-use-basepath/src/main/java/io/swagger/sample/exception/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-use-basepath/src/main/java/io/swagger/sample/model/ApiResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-use-basepath/src/main/java/io/swagger/sample/model/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-use-basepath/src/main/java/io/swagger/sample/model/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-use-basepath/src/main/java/io/swagger/sample/model/Pet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-use-basepath/src/main/java/io/swagger/sample/model/Tag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-use-basepath/src/main/java/io/swagger/sample/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-use-basepath/src/main/java/io/swagger/sample/resource/JavaRestResourceUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-use-basepath/src/main/java/io/swagger/sample/resource/PetResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-use-basepath/src/main/java/io/swagger/sample/resource/PetStoreResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-use-basepath/src/main/java/io/swagger/sample/resource/SampleExceptionMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-use-basepath/src/main/java/io/swagger/sample/resource/UserResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-use-basepath/src/main/java/io/swagger/sample/util/ApiOriginFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-use-basepath/src/main/resources/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-use-basepath/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi-use-basepath/src/main/webapp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi/conf/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi/src/main/java/io/swagger/sample/Bootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/Bootstrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi/src/main/java/io/swagger/sample/Bootstrap2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/Bootstrap2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi/src/main/java/io/swagger/sample/data/PetData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi/src/main/java/io/swagger/sample/data/StoreData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi/src/main/java/io/swagger/sample/data/UserData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi/src/main/java/io/swagger/sample/exception/ApiException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi/src/main/java/io/swagger/sample/exception/BadRequestException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi/src/main/java/io/swagger/sample/exception/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi/src/main/java/io/swagger/sample/model/ApiResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi/src/main/java/io/swagger/sample/model/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi/src/main/java/io/swagger/sample/model/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi/src/main/java/io/swagger/sample/model/Pet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi/src/main/java/io/swagger/sample/model/Tag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi/src/main/java/io/swagger/sample/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi/src/main/java/io/swagger/sample/resource/JavaRestResourceUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi/src/main/java/io/swagger/sample/resource/PetResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi/src/main/java/io/swagger/sample/resource/PetStoreResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/resource/PetStoreResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi/src/main/java/io/swagger/sample/resource/SampleExceptionMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi/src/main/java/io/swagger/sample/resource/UserResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi/src/main/java/io/swagger/sample/util/ApiOriginFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi/src/main/resources/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs-multi/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs/conf/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs/src/main/java/io/swagger/sample/Bootstrap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs/src/main/java/io/swagger/sample/data/PetData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs/src/main/java/io/swagger/sample/data/StoreData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs/src/main/java/io/swagger/sample/data/UserData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs/src/main/java/io/swagger/sample/exception/ApiException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs/src/main/java/io/swagger/sample/exception/BadRequestException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs/src/main/java/io/swagger/sample/exception/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs/src/main/java/io/swagger/sample/model/ApiResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs/src/main/java/io/swagger/sample/model/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs/src/main/java/io/swagger/sample/model/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs/src/main/java/io/swagger/sample/model/Pet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs/src/main/java/io/swagger/sample/model/Tag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs/src/main/java/io/swagger/sample/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs/src/main/java/io/swagger/sample/resource/JavaRestResourceUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs/src/main/java/io/swagger/sample/resource/PetResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/resource/PetResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs/src/main/java/io/swagger/sample/resource/PetStoreResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs/src/main/java/io/swagger/sample/resource/SampleExceptionMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs/src/main/java/io/swagger/sample/resource/UserResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs/src/main/java/io/swagger/sample/util/ApiOriginFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs/src/main/resources/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-jaxrs/src/main/webapp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-spring/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-spring/conf/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-spring/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-spring/src/main/java/io/swagger/sample/Bootstrap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-spring/src/main/java/io/swagger/sample/bean/JavaRestResourceUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-spring/src/main/java/io/swagger/sample/bean/PetResourceBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-spring/src/main/java/io/swagger/sample/bean/PetStoreResourceBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-spring/src/main/java/io/swagger/sample/bean/SampleExceptionMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-spring/src/main/java/io/swagger/sample/bean/UserResourceBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-spring/src/main/java/io/swagger/sample/data/PetData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-spring/src/main/java/io/swagger/sample/data/StoreData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-spring/src/main/java/io/swagger/sample/data/UserData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-spring/src/main/java/io/swagger/sample/exception/ApiException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-spring/src/main/java/io/swagger/sample/exception/BadRequestException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-spring/src/main/java/io/swagger/sample/exception/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-spring/src/main/java/io/swagger/sample/model/ApiResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-spring/src/main/java/io/swagger/sample/model/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-spring/src/main/java/io/swagger/sample/model/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-spring/src/main/java/io/swagger/sample/model/Pet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-spring/src/main/java/io/swagger/sample/model/Tag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-spring/src/main/java/io/swagger/sample/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-spring/src/main/java/io/swagger/sample/resource/PetResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-spring/src/main/java/io/swagger/sample/resource/PetStoreResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-spring/src/main/java/io/swagger/sample/resource/UserResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-spring/src/main/java/io/swagger/sample/util/ApiAuthorizationFilterImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-spring/src/main/java/io/swagger/sample/util/ApiOriginFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-spring/src/main/resources/beans-asset-ws.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-spring/src/main/resources/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-spring/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-spring/src/main/webapp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey-spring/src/test/scala/ResourceListingIT.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2-guice/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2-guice/conf/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2-guice/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2-guice/src/main/java/io/swagger/sample/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2-guice/src/main/java/io/swagger/sample/Bootstrap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2-guice/src/main/java/io/swagger/sample/SwaggerExampleGuiceContextListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2-guice/src/main/java/io/swagger/sample/data/PetData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2-guice/src/main/java/io/swagger/sample/data/StoreData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2-guice/src/main/java/io/swagger/sample/data/UserData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2-guice/src/main/java/io/swagger/sample/exception/ApiException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2-guice/src/main/java/io/swagger/sample/exception/BadRequestException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2-guice/src/main/java/io/swagger/sample/exception/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2-guice/src/main/java/io/swagger/sample/model/ApiResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2-guice/src/main/java/io/swagger/sample/model/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2-guice/src/main/java/io/swagger/sample/model/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2-guice/src/main/java/io/swagger/sample/model/Pet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2-guice/src/main/java/io/swagger/sample/model/Tag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2-guice/src/main/java/io/swagger/sample/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2-guice/src/main/java/io/swagger/sample/resource/JavaRestResourceUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2-guice/src/main/java/io/swagger/sample/resource/PetResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2-guice/src/main/java/io/swagger/sample/resource/PetStoreResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2-guice/src/main/java/io/swagger/sample/resource/SampleExceptionMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2-guice/src/main/java/io/swagger/sample/resource/UserResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2-guice/src/main/java/io/swagger/sample/util/ApiAuthorizationFilterImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2-guice/src/main/java/io/swagger/sample/util/ApiOriginFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2-guice/src/main/resources/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2-guice/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2-guice/src/main/webapp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2-guice/src/test/scala/ResourceListingIT.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2/conf/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2/src/main/java/io/swagger/sample/Bootstrap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2/src/main/java/io/swagger/sample/data/PetData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2/src/main/java/io/swagger/sample/data/StoreData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2/src/main/java/io/swagger/sample/data/UserData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2/src/main/java/io/swagger/sample/exception/ApiException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2/src/main/java/io/swagger/sample/exception/BadRequestException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2/src/main/java/io/swagger/sample/exception/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2/src/main/java/io/swagger/sample/model/ApiResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2/src/main/java/io/swagger/sample/model/AuthenticationInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2/src/main/java/io/swagger/sample/model/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2/src/main/java/io/swagger/sample/model/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2/src/main/java/io/swagger/sample/model/Pet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2/src/main/java/io/swagger/sample/model/Tag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2/src/main/java/io/swagger/sample/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2/src/main/java/io/swagger/sample/resource/JavaRestResourceUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2/src/main/java/io/swagger/sample/resource/PetResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2/src/main/java/io/swagger/sample/resource/PetStoreResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2/src/main/java/io/swagger/sample/resource/QueryResultBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2/src/main/java/io/swagger/sample/resource/SampleExceptionMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2/src/main/java/io/swagger/sample/resource/UserResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2/src/main/java/io/swagger/sample/util/ApiAuthorizationFilterImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2/src/main/java/io/swagger/sample/util/ApiOriginFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2/src/main/resources/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-jersey2/src/main/webapp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-mule/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-mule/conf/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-mule/mule-project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-mule/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-mule/src/main/app/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-mule/src/main/app/mule-deploy.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-mule/src/main/app/mule-swagger-integration.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-mule/src/main/java/io/swagger/sample/Bootstrap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-mule/src/main/java/io/swagger/sample/data/PetData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-mule/src/main/java/io/swagger/sample/data/StoreData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-mule/src/main/java/io/swagger/sample/data/UserData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-mule/src/main/java/io/swagger/sample/exception/ApiException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-mule/src/main/java/io/swagger/sample/exception/BadRequestException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-mule/src/main/java/io/swagger/sample/exception/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-mule/src/main/java/io/swagger/sample/model/ApiResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-mule/src/main/java/io/swagger/sample/model/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-mule/src/main/java/io/swagger/sample/model/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-mule/src/main/java/io/swagger/sample/model/Pet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-mule/src/main/java/io/swagger/sample/model/Tag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-mule/src/main/java/io/swagger/sample/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-mule/src/main/java/io/swagger/sample/resource/JavaRestResourceUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-mule/src/main/java/io/swagger/sample/resource/PetResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-mule/src/main/java/io/swagger/sample/resource/PetStoreResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-mule/src/main/java/io/swagger/sample/resource/SampleExceptionMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-mule/src/main/java/io/swagger/sample/resource/UserResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-mule/src/main/java/io/swagger/sample/util/ApiOriginFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-mule/src/main/resources/META-INF/services/javax.ws.rs.ext.MessageBodyWriter" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-mule/src/main/resources/config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-mule/src/main/resources/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-mule/src/main/resources/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-filter/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-filter/conf/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-filter/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-filter/src/main/java/io/swagger/sample/Bootstrap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-filter/src/main/java/io/swagger/sample/PetStoreApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-filter/src/main/java/io/swagger/sample/data/PetData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-filter/src/main/java/io/swagger/sample/data/StoreData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-filter/src/main/java/io/swagger/sample/data/UserData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-filter/src/main/java/io/swagger/sample/exception/ApiException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-filter/src/main/java/io/swagger/sample/exception/BadRequestException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-filter/src/main/java/io/swagger/sample/exception/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-filter/src/main/java/io/swagger/sample/model/ApiResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-filter/src/main/java/io/swagger/sample/model/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-filter/src/main/java/io/swagger/sample/model/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-filter/src/main/java/io/swagger/sample/model/Pet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-filter/src/main/java/io/swagger/sample/model/Tag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-filter/src/main/java/io/swagger/sample/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-filter/src/main/java/io/swagger/sample/resource/JavaRestResourceUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-filter/src/main/java/io/swagger/sample/resource/PetResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-filter/src/main/java/io/swagger/sample/resource/PetStoreResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-filter/src/main/java/io/swagger/sample/resource/SampleExceptionMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-filter/src/main/java/io/swagger/sample/resource/UserResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-filter/src/main/java/io/swagger/sample/util/ApiAuthorizationFilterImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-filter/src/main/java/io/swagger/sample/util/ApiOriginFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-filter/src/main/resources/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-filter/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-filter/src/main/webapp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-spring/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-spring/conf/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-spring/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-spring/src/main/java/io/swagger/sample/Bootstrap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-spring/src/main/java/io/swagger/sample/bean/JavaRestResourceUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-spring/src/main/java/io/swagger/sample/bean/PetResourceBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-spring/src/main/java/io/swagger/sample/bean/PetStoreResourceBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-spring/src/main/java/io/swagger/sample/bean/SampleExceptionMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-spring/src/main/java/io/swagger/sample/bean/UserResourceBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-spring/src/main/java/io/swagger/sample/data/PetData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-spring/src/main/java/io/swagger/sample/data/StoreData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-spring/src/main/java/io/swagger/sample/data/UserData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-spring/src/main/java/io/swagger/sample/exception/ApiException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-spring/src/main/java/io/swagger/sample/exception/BadRequestException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-spring/src/main/java/io/swagger/sample/exception/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-spring/src/main/java/io/swagger/sample/model/ApiResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-spring/src/main/java/io/swagger/sample/model/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-spring/src/main/java/io/swagger/sample/model/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-spring/src/main/java/io/swagger/sample/model/Pet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-spring/src/main/java/io/swagger/sample/model/Tag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-spring/src/main/java/io/swagger/sample/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-spring/src/main/java/io/swagger/sample/resource/PetResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-spring/src/main/java/io/swagger/sample/resource/PetStoreResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-spring/src/main/java/io/swagger/sample/resource/UserResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-spring/src/main/java/io/swagger/sample/util/ApiAuthorizationFilterImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-spring/src/main/java/io/swagger/sample/util/ApiOriginFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-spring/src/main/resources/beans-asset-ws.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-spring/src/main/resources/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-spring/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-spring/src/main/webapp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy-spring/src/test/scala/ResourceListingIT.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy/conf/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy/src/main/java/io/swagger/sample/Bootstrap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy/src/main/java/io/swagger/sample/PetStoreApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy/src/main/java/io/swagger/sample/data/PetData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy/src/main/java/io/swagger/sample/data/StoreData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy/src/main/java/io/swagger/sample/data/UserData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy/src/main/java/io/swagger/sample/exception/ApiException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy/src/main/java/io/swagger/sample/exception/BadRequestException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy/src/main/java/io/swagger/sample/exception/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy/src/main/java/io/swagger/sample/model/ApiResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy/src/main/java/io/swagger/sample/model/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy/src/main/java/io/swagger/sample/model/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy/src/main/java/io/swagger/sample/model/Pet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy/src/main/java/io/swagger/sample/model/Tag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy/src/main/java/io/swagger/sample/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy/src/main/java/io/swagger/sample/resource/JavaRestResourceUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy/src/main/java/io/swagger/sample/resource/PetResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy/src/main/java/io/swagger/sample/resource/PetStoreResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy/src/main/java/io/swagger/sample/resource/SampleExceptionMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy/src/main/java/io/swagger/sample/resource/UserResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy/src/main/java/io/swagger/sample/util/ApiAuthorizationFilterImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy/src/main/java/io/swagger/sample/util/ApiOriginFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy/src/main/resources/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-resteasy/src/main/webapp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-servlet/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-servlet/src/main/java/io/swagger/sample/model/ApiResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-servlet/src/main/java/io/swagger/sample/model/SampleData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-servlet/src/main/java/io/swagger/sample/servlet/SampleServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-servlet/src/main/java/io/swagger/sample/util/ApiOriginFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-servlet/src/main/resource/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-servlet/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-servlet/src/main/webapp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-servlet/src/test/java/io/swagger/sample/ResourceListingIT.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-spring-boot/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-spring-boot/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-spring-boot/src/main/java/io/swagger/sample/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-spring-boot/src/main/java/io/swagger/sample/data/PetData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-spring-boot/src/main/java/io/swagger/sample/data/StoreData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-spring-boot/src/main/java/io/swagger/sample/data/UserData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-spring-boot/src/main/java/io/swagger/sample/exception/ApiException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-spring-boot/src/main/java/io/swagger/sample/exception/BadRequestException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-spring-boot/src/main/java/io/swagger/sample/exception/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-spring-boot/src/main/java/io/swagger/sample/models/ApiResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-spring-boot/src/main/java/io/swagger/sample/models/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-spring-boot/src/main/java/io/swagger/sample/models/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-spring-boot/src/main/java/io/swagger/sample/models/Pet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-spring-boot/src/main/java/io/swagger/sample/models/Tag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-spring-boot/src/main/java/io/swagger/sample/models/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-spring-boot/src/main/java/io/swagger/sample/resource/AbstractResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-spring-boot/src/main/java/io/swagger/sample/resource/PetResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-spring-boot/src/main/java/io/swagger/sample/resource/StoreResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-spring-boot/src/main/java/io/swagger/sample/utils/SimpleCORSFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/java-spring-boot/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/swagger-petstore-v2/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/swagger-petstore-v2/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/swagger-petstore-v2/conf/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/swagger-petstore-v2/jetty-runner-9.2.9.v20150224.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/swagger-petstore-v2/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/swagger-petstore-v2/run.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/swagger-petstore-v2/src/main/java/io/swagger/sample/Bootstrap.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/swagger-petstore-v2/src/main/java/io/swagger/sample/data/PetData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/swagger-petstore-v2/src/main/java/io/swagger/sample/data/StoreData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/swagger-petstore-v2/src/main/java/io/swagger/sample/data/UserData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/swagger-petstore-v2/src/main/java/io/swagger/sample/exception/ApiException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/swagger-petstore-v2/src/main/java/io/swagger/sample/exception/BadRequestException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/swagger-petstore-v2/src/main/java/io/swagger/sample/exception/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/swagger-petstore-v2/src/main/java/io/swagger/sample/model/ApiResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/swagger-petstore-v2/src/main/java/io/swagger/sample/model/Category.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/swagger-petstore-v2/src/main/java/io/swagger/sample/model/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/swagger-petstore-v2/src/main/java/io/swagger/sample/model/Pet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/swagger-petstore-v2/src/main/java/io/swagger/sample/model/Tag.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/swagger-petstore-v2/src/main/java/io/swagger/sample/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/swagger-petstore-v2/src/main/java/io/swagger/sample/resource/JavaRestResourceUtil.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/swagger-petstore-v2/src/main/java/io/swagger/sample/resource/PetResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/swagger-petstore-v2/src/main/java/io/swagger/sample/resource/PetStoreResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/swagger-petstore-v2/src/main/java/io/swagger/sample/resource/SampleExceptionMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/swagger-petstore-v2/src/main/java/io/swagger/sample/resource/UserResource.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/swagger-petstore-v2/src/main/java/io/swagger/sample/util/ApiOriginFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/swagger-petstore-v2/src/main/java/io/swagger/sample/util/JacksonJsonProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/swagger-petstore-v2/src/main/resources/logback.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/swagger-petstore-v2/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/swagger-petstore-v2/src/main/webapp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/pom.xml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/classes/" />
-    <ignored path="$PROJECT_DIR$/java/inflector-jetty-webxml/target/" />
-    <ignored path="$PROJECT_DIR$/java/java-jersey-jaxrs-multi-use-basepath/target/" />
-    <ignored path="$PROJECT_DIR$/java/java-jaxrs/target/" />
-    <ignored path="$PROJECT_DIR$/java/java-jersey-spring/target/" />
-    <ignored path="$PROJECT_DIR$/java/inflector-dropwizard/target/" />
-    <ignored path="$PROJECT_DIR$/java/java-dropwizard/target/" />
-    <ignored path="$PROJECT_DIR$/java/java-jersey-governator/target/" />
-    <ignored path="$PROJECT_DIR$/java/java-mule/target/" />
-    <ignored path="$PROJECT_DIR$/java/java-grails2/target/" />
-    <ignored path="$PROJECT_DIR$/java/java-jersey-jaxrs/target/" />
-    <ignored path="$PROJECT_DIR$/java/java-jersey2-guice/target/" />
-    <ignored path="$PROJECT_DIR$/java/swagger-petstore-v2/target/" />
-    <ignored path="$PROJECT_DIR$/java/java-resteasy-filter/target/" />
-    <ignored path="$PROJECT_DIR$/java/java-jersey-jaxrs-multi-simple-webxml/target/" />
-    <ignored path="$PROJECT_DIR$/java/inflector-dropwizard-guice/target/" />
-    <ignored path="$PROJECT_DIR$/java/java-resteasy-spring/target/" />
-    <ignored path="$PROJECT_DIR$/java/java-jaxrs-subresource/target/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/java/java-jersey-jaxrs-multi/target/" />
-    <ignored path="$PROJECT_DIR$/java/java-resteasy/target/" />
-    <ignored path="$PROJECT_DIR$/java/java-jersey-jaxrs-multi-simple-servlet/target/" />
-    <ignored path="$PROJECT_DIR$/java/java-jersey2/target/" />
-    <ignored path="$PROJECT_DIR$/java/java-jaxrs-no-annotations/target/" />
-    <ignored path="$PROJECT_DIR$/java/java-servlet/target/" />
-    <ignored path="$PROJECT_DIR$/java/java-jaxrs-cxf/target/" />
-    <ignored path="$PROJECT_DIR$/java/java-jaxrs-no-webxml/target/" />
-    <ignored path="$PROJECT_DIR$/java/java-jaxrs-wink/target/" />
-    <ignored path="$PROJECT_DIR$/java/api-phone/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -902,44 +133,10 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>Pet</find>
-      <find>findByStatus</find>
-      <find>Status values that need to be considered for filter</find>
-      <find>.json</find>
-      <find>java-jersey-jaxrs-multi-use-basepath</find>
-      <find>swagger-java-jersey-multi-use-basepath-sample-app</find>
-      <find>api</find>
-    </findStrings>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/java/java-jersey-jaxrs-multi-use-basepath/src/main/java/io/swagger/sample/data/UserData.java" />
-        <option value="$PROJECT_DIR$/java/api-phone/src/main/java/io/api/data/UserData.java" />
-        <option value="$PROJECT_DIR$/java/api-phone/src/main/java/io/api/resource/PetResource.java" />
-        <option value="$PROJECT_DIR$/scala/scala-play2.4/conf/routes" />
-        <option value="$PROJECT_DIR$/java/api-phone/src/main/java/io/swagger/sample/data/PetData.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/java/api-phone/src/main/java/io/swagger/sample/data/UserData.java" />
-        <option value="$PROJECT_DIR$/java/api-phone/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/java/api-phone/pom.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-        <option name="vmOptionsForImporter" value="-Xmx768m" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
@@ -947,272 +144,24 @@
       <select />
     </treeState>
   </component>
-  <component name="MavenRunner">
-    <option name="environmentProperties">
-      <map>
-        <entry key="JAVA_HOME" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home" />
-      </map>
-    </option>
-  </component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
       <list>
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
         <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/swagger-samples-project.iml" />
-        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_cxf_sample_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_cxf_sample_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_grails2_jersey2_sample_app_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_grails2_jersey2_sample_app_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_governator_sample_app_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_governator_sample_app_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_multi_sample_app_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_multi_sample_app_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_multi_simple_servlet_sample_app_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_multi_simple_servlet_sample_app_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_multi_simple_webxml_sample_app_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_multi_simple_webxml_sample_app_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_multi_use_basepath_sample_app_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_multi_use_basepath_sample_app_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_sample_app_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_sample_app_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_spring_app_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_spring_app_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_no_annotations_sample_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_no_annotations_sample_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_resteasy_filter_sample_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_resteasy_filter_sample_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_resteasy_sample_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_resteasy_sample_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_resteasy_spring_sample_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_resteasy_spring_sample_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_sample_app_no_webxml_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_sample_app_no_webxml_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_sample_app_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_sample_app_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_servlet_sample_app_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_servlet_sample_app_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_subresource_sample_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_subresource_sample_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_jaxrs_wink_sample_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_jaxrs_wink_sample_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_jersey2_guice_sample_app_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_jersey2_guice_sample_app_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_jersey2_sample_app_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_jersey2_sample_app_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/encodings.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_0_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_0_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_8.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_8.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_8.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_9_8.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_2_0.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_27_0_1_android.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_contribs_jersey_multipart_1_13.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_13.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_json_1_13.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_server_1_13.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_servlet_1_13.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_2_3_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_1_3_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_22_SNAPSHOT.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_core_1_5_22_SNAPSHOT.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_jaxrs_1_5_22_SNAPSHOT.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_jersey_jaxrs_1_5_22_SNAPSHOT.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_22_SNAPSHOT.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_2_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_8_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_2_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_compat_qual_2_5_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_jaxrs_1_9_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_xc_1_9_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jettison_jettison_1_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_17.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_mimepull_1_6.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_reflections_reflections_0_9_11.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_10_3.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_reflect_2_10_3.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_scalatest_scalatest_2_10_2_1_3.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_3.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" />
-        <option value="$PROJECT_DIR$/swagger-samples-project.iml" />
-        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_cxf_sample_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_cxf_sample_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_grails2_jersey2_sample_app_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_grails2_jersey2_sample_app_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_governator_sample_app_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_governator_sample_app_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_multi_sample_app_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_multi_sample_app_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_multi_simple_servlet_sample_app_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_multi_simple_servlet_sample_app_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_multi_simple_webxml_sample_app_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_multi_simple_webxml_sample_app_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_multi_use_basepath_sample_app_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_multi_use_basepath_sample_app_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_sample_app_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_sample_app_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_spring_app_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_spring_app_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_no_annotations_sample_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_no_annotations_sample_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_resteasy_filter_sample_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_resteasy_filter_sample_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_resteasy_sample_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_resteasy_sample_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_resteasy_spring_sample_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_resteasy_spring_sample_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_sample_app_no_webxml_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_sample_app_no_webxml_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_sample_app_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_sample_app_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_servlet_sample_app_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_servlet_sample_app_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_subresource_sample_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_java_subresource_sample_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_jaxrs_wink_sample_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_jaxrs_wink_sample_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_jersey2_guice_sample_app_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_jersey2_guice_sample_app_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_jersey2_sample_app_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/swagger_jersey2_sample_app_war_exploded.xml" />
-        <option value="$PROJECT_DIR$/.idea/encodings.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_0_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_0_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_8.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_8.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_8.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_9_8.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_2_0.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_27_0_1_android.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_contribs_jersey_multipart_1_13.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_13.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_json_1_13.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_server_1_13.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_servlet_1_13.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_2_3_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_1_3_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_22_SNAPSHOT.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_core_1_5_22_SNAPSHOT.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_jaxrs_1_5_22_SNAPSHOT.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_jersey_jaxrs_1_5_22_SNAPSHOT.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_22_SNAPSHOT.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_2_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_8_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_2_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_compat_qual_2_5_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_jaxrs_1_9_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_xc_1_9_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jettison_jettison_1_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_17.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_mimepull_1_6.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_reflections_reflections_0_9_11.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_10_3.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_reflect_2_10_3.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_scalatest_scalatest_2_10_2_1_3.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_3.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_0_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_0_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_8.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_8.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_8.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_9_8.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_2_0.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_27_0_1_android.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_contribs_jersey_multipart_1_13.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_13.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_json_1_13.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_server_1_13.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_servlet_1_13.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_2_3_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_1_3_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_22_SNAPSHOT.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_core_1_5_22_SNAPSHOT.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_jaxrs_1_5_22_SNAPSHOT.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_jersey_jaxrs_1_5_22_SNAPSHOT.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_22_SNAPSHOT.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_2_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_8_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_2_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_compat_qual_2_5_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_jaxrs_1_9_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_xc_1_9_2.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jettison_jettison_1_1.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_17.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_mimepull_1_6.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_reflections_reflections_0_9_11.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_10_3.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_reflect_2_10_3.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_scalatest_scalatest_2_10_2_1_3.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_3.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" />
-        <option value="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" />
-        <option value="$PROJECT_DIR$/java/api-phone/api-phone.iml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/api_phone_war.xml" />
-        <option value="$PROJECT_DIR$/.idea/artifacts/api_phone_war_exploded.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1680" />
-    <option name="height" value="958" />
+    <option name="height" value="1050" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -1221,17 +170,6 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/java/api-phone/src" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -1250,181 +188,57 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c2b990f2-65a3-47b0-9036-211d634f5c2a" name="Default Changelist" comment="" />
-      <created>1561227320230</created>
+      <changelist id="7f9da6a2-53ee-406e-b28c-1e41dd355dbd" name="Default Changelist" comment="" />
+      <created>1561632057875</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1561227320230</updated>
-      <workItem from="1561227323951" duration="954000" />
-      <workItem from="1561228429239" duration="4212000" />
+      <updated>1561632057875</updated>
+      <workItem from="1561632059275" duration="674000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5166000" />
+    <option name="totallyTimeSpent" value="693000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="958" extended-state="1" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1680" height="945" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3028083" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25274727" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3290993" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Docker" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="Docker" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32942554" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.32967034" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="JSF" order="6" />
-      <window_info anchor="right" id="Mongo Explorer" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="10" />
-      <window_info anchor="right" id="CDI" order="11" />
-      <window_info anchor="right" id="Bean Validation" order="12" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.32967034" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/api-phone/src/main/java/io/api/data/UserData.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="62" column="27" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
-          <folding>
-            <element signature="e#802#808#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="330">
+          <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/api-phone/src/main/java/io/api/Bootstrap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/api-phone/src/main/java/io/api/Bootstrap2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/api-phone/src/main/java/io/api/resource/PetResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="135" selection-start-line="135" selection-start-column="2" selection-end-line="146" selection-end-column="5" />
-          <folding>
-            <element signature="e#1193#1206#0" />
-            <element signature="e#1702#1706#0" />
-            <element signature="e#2361#2368#0" />
-            <element signature="e#2918#2923#0" />
-            <element signature="method#uploadFile#0;class#PetResource#0" />
-            <element signature="e#4230#4235#0" />
-            <element signature="e#4670#4674#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scala/scala-play2.4/conf/routes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scala/scala-play2.6/app/controllers/PetApiController.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="100" selection-start-line="100" selection-end-line="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/api-phone/src/main/java/io/swagger/sample/data/PetData.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/api-phone/src/main/java/io/swagger/sample/data/UserData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/api-phone/src/main/java/io/swagger/sample/Bootstrap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/api-phone/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="81" column="17" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/api-phone/swagger-java-jersey-multi-use-basepath-sample-app.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/api-phone/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1851">
-          <caret line="306" column="17" selection-start-line="306" selection-start-column="17" selection-end-line="306" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArquillianSettingsConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>
