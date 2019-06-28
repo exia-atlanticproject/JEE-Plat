@@ -8,7 +8,6 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.sun.jndi.toolkit.url.Uri;
 import io.swagger.annotations.*;
 import io.swagger.sample.model.User;
-import io.swagger.sample.util.Security;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
@@ -63,7 +62,6 @@ public class AuthResource {
 
     @GET
     @Path("/auth")
-    @Security
     @ApiOperation(value = "Get user by user name",
             response = User.class)
     public Response auth() {
