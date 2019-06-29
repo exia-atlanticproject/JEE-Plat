@@ -10,6 +10,7 @@ public class UsersEntity {
     private String name;
     private String surname;
     private String email;
+    private UserRoles role;
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -52,6 +53,16 @@ public class UsersEntity {
         this.email = email;
     }
 
+    @Enumerated(EnumType.STRING)
+    @Column(name = "role", nullable = false)
+    public UserRoles getRole() {
+        return role;
+    }
+
+    public void setRole(UserRoles role) {
+        this.role = role;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -70,6 +81,6 @@ public class UsersEntity {
 
     @Override
     public String toString() {
-        return String.format(" %d %s %s %s", this.id, this.name, this.surname, this.email);
+        return String.format("%d %s %s %s", this.id, this.name, this.surname, this.email);
     }
 }

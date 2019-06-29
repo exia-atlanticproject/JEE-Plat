@@ -11,7 +11,8 @@ CREATE TABLE Users(
         id      Int  Auto_increment  NOT NULL ,
         name    Varchar (50) NOT NULL ,
         surname Varchar (50) NOT NULL ,
-        email   Varchar (50) NOT NULL
+        email   Varchar (50) NOT NULL,
+        role    ENUM('ADMIN', 'CLIENT') DEFAULT 'CLIENT' NOT NULL
 	,CONSTRAINT Users_PK PRIMARY KEY (id)
 )ENGINE=InnoDB;
 

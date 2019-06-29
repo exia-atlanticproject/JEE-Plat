@@ -52,6 +52,12 @@ public class QueryExecutor {
         return null;
     }
 
+    public void createUser(UsersEntity user) {
+        session.getTransaction().begin();
+        session.save(user);
+        session.getTransaction().commit();
+    }
+
     public DevicesEntity addDevice(String model, String mac) {
         session.getTransaction().begin();
         DevicesEntity device = new DevicesEntity();
