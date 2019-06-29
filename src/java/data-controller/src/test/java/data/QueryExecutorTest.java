@@ -2,6 +2,7 @@ package data;
 
 import data.model.DevicesEntity;
 import data.model.MetricsEntity;
+import data.model.UserRoles;
 import data.model.UsersEntity;
 import org.junit.jupiter.api.*;
 
@@ -119,6 +120,26 @@ class QueryExecutorTest {
         Assertions.assertEquals(surname, users.getSurname());
         Assertions.assertEquals(email, users.getEmail());
         statement.close();
+    }
+
+    @Test
+    void createUser() throws SQLException {
+        UsersEntity user = new UsersEntity();
+        String email = UUID.randomUUID().toString()+"@mail.com";
+        user.setEmail(email);
+        user.setName("Test d");
+        user.setSurname("Test s");
+        user.setRole(UserRoles.ADMIN);
+
+        queryExecutor.createUser(user);
+
+        Statement statement = connection.createStatement();
+        ResultSet result = statement.executeQuery("SELECT * FROM Users WHERE email = '"+email+"';");
+        result.next();
+        Assertions.assertEquals(user.getName(), result.getString(2));
+        Assertions.assertEquals(user.getSurname(), result.getString(3));
+        Assertions.assertEquals(user.getEmail(), result.getString(4));
+        Assertions.assertEquals(user.getRole().name(), result.getString(5));
     }
 
     @Test
