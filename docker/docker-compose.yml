@@ -1,0 +1,16 @@
+version: "3.7"
+services:
+  broker:
+    image: webcenter/activemq:latest
+    volumes:
+      - ./activemq_conf:/opt/activemq/conf
+    ports:
+      - 1883:1883
+      - 8161:8161
+  database:
+    build:
+      context: ./database
+      dockerfile: Dockerfile
+    ports:
+      - 23506:3306
+    container_name: atlantis-jee-database
