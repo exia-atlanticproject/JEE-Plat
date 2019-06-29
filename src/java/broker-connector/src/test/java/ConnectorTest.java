@@ -1,11 +1,7 @@
-import org.apache.activemq.ActiveMQConnection;
-import org.apache.activemq.command.ActiveMQTextMessage;
+import Broker.Connector;
 import org.junit.jupiter.api.Test;
 
 import javax.jms.JMSException;
-import javax.jms.Message;
-import javax.jms.MessageNotWriteableException;
-import javax.jms.TextMessage;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -22,7 +18,8 @@ class ConnectorTest {
     @Test
     void connection() {
         try {
-            Connector brokerConnector = new Connector("ssl://localhost:61714");
+            Connector brokerConnector = Connector.getInstance();
+            brokerConnector.connect("mqtt://localhost:1883");
             brokerConnector.disconnect();
         } catch (Exception e) {
             fail("Unable to connect");

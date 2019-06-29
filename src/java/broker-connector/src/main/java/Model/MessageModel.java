@@ -1,4 +1,4 @@
-package model;
+package Model;
 
 public class MessageModel {
     private String connector;

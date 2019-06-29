@@ -1,4 +1,6 @@
-import model.MessageModel;
+package Broker;
+
+import Model.MessageModel;
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.apache.activemq.ActiveMQSslConnectionFactory;
 import org.json.JSONObject;
@@ -21,25 +23,37 @@ public class Connector implements MessageListener, ExceptionListener {
     private Session session;
     private ConnectorStatus status = ConnectorStatus.DISCONNECTED;
 
-    public Connector(String url) throws Exception {
+    private static Connector connector = new Connector();
+
+    private Connector() {
+    }
+
+    public static Connector getInstance() {
+        return connector;
+    }
+
+    public void connect(String url, boolean test) throws Exception {
+        if (this.status == ConnectorStatus.CONNECTED) return;
+        if (test) this.id = "TEST";
         this.init(url);
     }
 
-    public Connector(String url, boolean test) throws Exception {
-        this.id = "TEST";
+    public void connect(String url) throws Exception {
+        if (this.status == ConnectorStatus.CONNECTED) return;
         this.init(url);
     }
 
     private void init(String url) throws Exception {
         listeners = new HashMap<>();
         logger.info("Connection...");
-        ActiveMQSslConnectionFactory connectionFactory = new ActiveMQSslConnectionFactory(url);
-        connectionFactory.setTrustStore(getClass().getClassLoader().getResource("client.ts").getPath());
-        connectionFactory.setTrustStorePassword("password");
+//        ActiveMQSslConnectionFactory connectionFactory = new ActiveMQSslConnectionFactory(url);
+//        connectionFactory.setTrustStore(getClass().getClassLoader().getResource("client.ts").getPath());
+//        connectionFactory.setTrustStorePassword("password");
+        ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory(url);
         connection = connectionFactory.createConnection("service", "safepw");
 
         connection.setClientID(id);
-        logger.info(String.format("Connector id = %s", id));
+        logger.info(String.format("Broker.Connector id = %s", id));
         connection.setExceptionListener(this);
         connection.start();
         logger.info(String.format("Connected to %S", url));
