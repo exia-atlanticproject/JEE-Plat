@@ -35,13 +35,11 @@ public class Connector implements MessageListener, ExceptionListener {
         listeners = new HashMap<>();
         logger.info("Connection...");
         ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory(url);
-//        connectionFactory.setTrustStore(getClass().getClassLoader().getResource("client.ts").getPath());
-//        connectionFactory.setTrustStorePassword("password");
         connection = connectionFactory.createConnection("service", "safepw");
+        connection.setExceptionListener(this);
 
         connection.setClientID(id);
         logger.info(String.format("main.Connector id = %s", id));
-        connection.setExceptionListener(this);
         connection.start();
         logger.info(String.format("Connected to %S", url));
         this.status = ConnectorStatus.CONNECTED;

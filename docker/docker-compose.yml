@@ -6,11 +6,13 @@ services:
       - ./activemq_conf:/opt/activemq/conf
     ports:
       - 1883:1883
+      - 61616:61616
       - 8161:8161
+    container_name: Atlantis-broker
   database:
     build:
       context: ./database
       dockerfile: Dockerfile
     ports:
       - 23506:3306
-    container_name: atlantis-jee-database
+    container_name: Atlantis-db

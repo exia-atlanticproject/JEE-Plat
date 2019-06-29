@@ -18,7 +18,7 @@ class ConnectorTest {
     @Test
     void connection() {
         try {
-            Connector brokerConnector = new Connector("ssl://localhost:61714");
+            Connector brokerConnector = new Connector("tcp://localhost:61616");
             brokerConnector.disconnect();
         } catch (Exception e) {
             fail("Unable to connect");

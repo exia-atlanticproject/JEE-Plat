@@ -1,127 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f9da6a2-53ee-406e-b28c-1e41dd355dbd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/api_phone_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/api_phone_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_cxf_sample_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_cxf_sample_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_grails2_jersey2_sample_app_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_grails2_jersey2_sample_app_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_governator_sample_app_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_governator_sample_app_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_multi_sample_app_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_multi_sample_app_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_multi_simple_servlet_sample_app_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_multi_simple_servlet_sample_app_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_multi_simple_webxml_sample_app_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_multi_simple_webxml_sample_app_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_multi_use_basepath_sample_app_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_multi_use_basepath_sample_app_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_sample_app_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_sample_app_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_spring_app_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_jersey_spring_app_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_no_annotations_sample_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_no_annotations_sample_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_resteasy_filter_sample_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_resteasy_filter_sample_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_resteasy_sample_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_resteasy_sample_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_resteasy_spring_sample_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_resteasy_spring_sample_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_sample_app_no_webxml_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_sample_app_no_webxml_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_sample_app_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_sample_app_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_servlet_sample_app_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_servlet_sample_app_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_subresource_sample_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_java_subresource_sample_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_jaxrs_wink_sample_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_jaxrs_wink_sample_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_jersey2_guice_sample_app_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_jersey2_guice_sample_app_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_jersey2_sample_app_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/swagger_jersey2_sample_app_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_9_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_27_0_1_android.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_contribs_jersey_multipart_1_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_json_1_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_server_1_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_servlet_1_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_bind_jaxb_impl_2_2_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_1_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_22_SNAPSHOT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_core_1_5_22_SNAPSHOT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_jaxrs_1_5_22_SNAPSHOT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_jersey_jaxrs_1_5_22_SNAPSHOT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_22_SNAPSHOT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_compat_qual_2_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_jaxrs_1_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_xc_1_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jettison_jettison_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_mimepull_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reflections_reflections_0_9_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_library_2_10_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scala_lang_scala_reflect_2_10_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_scalatest_scalatest_2_10_2_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="b61070da-a27b-4105-822d-9de2bc3f3795" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/Bootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/Bootstrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/Bootstrap2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/Bootstrap2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/data/PetData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/data/PetData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/data/StoreData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/data/StoreData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/data/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/data/UserData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/exception/ApiException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/exception/ApiException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/exception/BadRequestException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/exception/BadRequestException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/exception/NotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/exception/NotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/model/ApiResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/model/ApiResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/model/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/model/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/model/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/model/Pet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/model/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/model/Tag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/resource/JavaRestResourceUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/resource/JavaRestResourceUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/resource/PetResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/resource/PetResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/resource/PetStoreResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/resource/PetStoreResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/resource/SampleExceptionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/resource/SampleExceptionMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/resource/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/resource/UserResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/util/ApiOriginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/java/io/swagger/sample/util/ApiOriginFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/api-phone/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/api-phone/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -130,39 +11,41 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf />
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand />
-      <select />
-    </treeState>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="data-controler" />
+      </map>
+    </option>
   </component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
       <list>
+        <option value="$PROJECT_DIR$/.idea/JEE-Plat.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
         <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -188,22 +71,23 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7f9da6a2-53ee-406e-b28c-1e41dd355dbd" name="Default Changelist" comment="" />
-      <created>1561632057875</created>
+      <changelist id="b61070da-a27b-4105-822d-9de2bc3f3795" name="Default Changelist" comment="" />
+      <created>1561754801686</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1561632057875</updated>
-      <workItem from="1561632059275" duration="674000" />
+      <updated>1561754801686</updated>
+      <workItem from="1561754802879" duration="117000" />
+      <workItem from="1561754921846" duration="5000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="693000" />
+    <option name="totallyTimeSpent" value="122000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="945" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25274727" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -218,27 +102,20 @@
       <window_info anchor="bottom" id="Docker" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32942554" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" visible="true" weight="0.32967034" />
+      <window_info anchor="right" id="Maven" order="4" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="JSON Utils" order="7" />
+      <window_info anchor="right" id="JSON Viewer" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>
