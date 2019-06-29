@@ -51,6 +51,7 @@ public class Connector implements MessageListener, ExceptionListener {
 //        connectionFactory.setTrustStorePassword("password");
         ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory(url);
         connection = connectionFactory.createConnection("service", "safepw");
+        connection.setExceptionListener(this);
 
         connection.setClientID(id);
         logger.info(String.format("Broker.Connector id = %s", id));
