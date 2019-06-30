@@ -1,15 +1,19 @@
+
 package data.model;
+
+
+import org.json.JSONObject;
 
 import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
 @Table(name = "Devices", schema = "atlantis")
-public class DevicesEntity {
+public class DevicesEntity implements Response {
     private int id;
     private String model;
     private String macAddress;
-    private UsersEntity usersEntity;
+    private UsersEntity owner;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -65,10 +69,20 @@ public class DevicesEntity {
     @ManyToOne
     @JoinColumn(name = "id_Users", referencedColumnName = "id", nullable = false)
     public UsersEntity getOwner() {
-        return usersEntity;
+        return owner;
     }
 
     public void setOwner(UsersEntity user) {
-        this.usersEntity = user;
+        this.owner = user;
+    }
+
+    @Override
+    public String toJsonString() {
+        JSONObject json = new JSONObject();
+        json.put("id", this.id);
+        json.put("model", this.model);
+        json.put("mac_address", this.macAddress);
+        if (this.owner != null) json.put("user", this.owner.getId());
+        return json.toString();
     }
 }

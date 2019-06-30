@@ -1,11 +1,13 @@
 package data.model;
 
+import org.json.JSONObject;
+
 import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name = "Users", schema = "atlantis", catalog = "")
-public class UsersEntity {
+@Table(name = "Users", schema = "atlantis")
+public class UsersEntity implements Response {
     private int id;
     private String name;
     private String surname;
@@ -82,5 +84,16 @@ public class UsersEntity {
     @Override
     public String toString() {
         return String.format("%d %s %s %s", this.id, this.name, this.surname, this.email);
+    }
+
+    @Override
+    public String toJsonString() {
+        JSONObject json = new JSONObject();
+        json.put("id", this.id);
+        json.put("name", this.name);
+        json.put("surname", this.surname);
+        json.put("email", this.email);
+        json.put("role", this.role.name());
+        return json.toString();
     }
 }

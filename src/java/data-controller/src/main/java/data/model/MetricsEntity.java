@@ -1,12 +1,14 @@
 package data.model;
 
+import org.json.JSONObject;
+
 import javax.persistence.*;
 import java.sql.Date;
 import java.util.Objects;
 
 @Entity
 @Table(name = "Metrics", schema = "atlantis", catalog = "")
-public class MetricsEntity {
+public class MetricsEntity implements Response {
     private int id;
     private int value;
     private Date date;
@@ -66,5 +68,15 @@ public class MetricsEntity {
 
     public void setDevicesByIdDevices(DevicesEntity devicesByIdDevices) {
         this.devicesByIdDevices = devicesByIdDevices;
+    }
+
+    @Override
+    public String toJsonString() {
+        JSONObject json = new JSONObject();
+        json.put("id", this.id);
+        json.put("value", this.value);
+        json.put("date", this.date);
+        json.put("device", this.devicesByIdDevices.getId());
+        return json.toString();
     }
 }
