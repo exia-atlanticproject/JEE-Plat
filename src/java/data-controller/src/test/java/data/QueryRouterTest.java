@@ -1,25 +1,17 @@
 package data;
 
-import Model.MessageModel;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class QueryRouterTest {
 
-    QueryRouter router;
-
-    {
-        try {
-            router = new QueryRouter();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+    QueryRouter router = new QueryRouter();
 
     @Test
     void simpleExec() {
-        String res = router.dispatch(new MessageModel("connectorid", "target", "aabb", "GetDevices", null));
+        String res = router.dispatch("GetDevices");
         System.out.println(res);
     }
+
 }
