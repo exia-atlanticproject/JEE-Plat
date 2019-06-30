@@ -2,7 +2,6 @@ package data;
 
 import data.model.DevicesEntity;
 import data.model.MetricsEntity;
-import data.model.UserRoles;
 import data.model.UsersEntity;
 import org.junit.jupiter.api.*;
 
@@ -29,7 +28,7 @@ class QueryExecutorTest {
     void beforeAll() throws SQLException {
         java.util.logging.Logger.getLogger("org.hibernate").setLevel(Level.OFF);
         connection = DriverManager.getConnection("jdbc:mysql://localhost:23506/atlantis", "root", "root");
-        queryExecutor = new QueryExecutor();
+        queryExecutor = QueryExecutor.getInstance();
     }
 
     @BeforeEach
@@ -54,6 +53,17 @@ class QueryExecutorTest {
         result.next();
         int count = result.getInt(1);
         List devices = queryExecutor.getDevices();
+        Assertions.assertEquals(count, devices.size());
+        statement.close();
+    }
+
+    @Test
+    void getUserDevices() throws SQLException {
+        Statement statement = connection.createStatement();
+        ResultSet result = statement.executeQuery("SELECT COUNT(*) FROM Devices where id_Users=1;");
+        result.next();
+        int count = result.getInt(1);
+        List devices = queryExecutor.getUserDevices(1);
         Assertions.assertEquals(count, devices.size());
         statement.close();
     }
@@ -123,26 +133,6 @@ class QueryExecutorTest {
     }
 
     @Test
-    void createUser() throws SQLException {
-        UsersEntity user = new UsersEntity();
-        String email = UUID.randomUUID().toString()+"@mail.com";
-        user.setEmail(email);
-        user.setName("Test d");
-        user.setSurname("Test s");
-        user.setRole(UserRoles.ADMIN);
-
-        queryExecutor.createUser(user);
-
-        Statement statement = connection.createStatement();
-        ResultSet result = statement.executeQuery("SELECT * FROM Users WHERE email = '"+email+"';");
-        result.next();
-        Assertions.assertEquals(user.getName(), result.getString(2));
-        Assertions.assertEquals(user.getSurname(), result.getString(3));
-        Assertions.assertEquals(user.getEmail(), result.getString(4));
-        Assertions.assertEquals(user.getRole().name(), result.getString(5));
-    }
-
-    @Test
     void addMetric() throws SQLException, ParseException {
     }
 
@@ -177,7 +167,7 @@ class QueryExecutorTest {
     @Test
     void addDevice() {
         DevicesEntity device = queryExecutor.addDevice("Test Model", UUID.randomUUID().toString());
-        Assertions.assertTrue(queryExecutor.getDevices().contains(device));
+        assertTrue(queryExecutor.getDevices().contains(device));
     }
 
     @Test
@@ -185,6 +175,6 @@ class QueryExecutorTest {
         DevicesEntity device = queryExecutor.addDevice("Test Model", UUID.randomUUID().toString());
         queryExecutor.linkDeviceToUser(1, device.getId());
 
-        Assertions.assertEquals(queryExecutor.getDevice(device.getId()).getOwner().getId(), 1);
+        assertEquals(queryExecutor.getDevice(device.getId()).getOwner().getId(), 1);
     }
 }
