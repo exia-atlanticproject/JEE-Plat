@@ -18,29 +18,13 @@ package io.swagger.sample.resource;
 
 import io.swagger.annotations.*;
 import io.swagger.sample.data.UserData;
-import io.swagger.sample.model.User;
 import io.swagger.sample.exception.ApiException;
 import io.swagger.sample.exception.NotFoundException;
-import org.dmfs.httpessentials.client.HttpRequestExecutor;
-import org.dmfs.httpessentials.httpurlconnection.HttpUrlConnectionExecutor;
-import org.dmfs.oauth2.client.*;
-import org.dmfs.oauth2.client.grants.AuthorizationCodeGrant;
-import org.dmfs.oauth2.client.grants.ImplicitGrant;
-import org.dmfs.oauth2.client.scope.BasicScope;
-import org.dmfs.rfc3986.encoding.Precoded;
-import org.dmfs.rfc3986.parameters.ParameterList;
-import org.dmfs.rfc3986.parameters.ParameterType;
-import org.dmfs.rfc3986.parameters.adapters.TextParameter;
-import org.dmfs.rfc3986.parameters.parametersets.BasicParameterList;
-import org.dmfs.rfc3986.parameters.parametertypes.BasicParameterType;
-import org.dmfs.rfc3986.parameters.valuetypes.TextValueType;
-import org.dmfs.rfc3986.uris.LazyUri;
-import org.dmfs.rfc5545.Duration;
+import io.swagger.sample.model.User;
 
-
+import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.Response;
-import javax.ws.rs.*;
 import javax.ws.rs.core.UriInfo;
 
 @Path("/user")
