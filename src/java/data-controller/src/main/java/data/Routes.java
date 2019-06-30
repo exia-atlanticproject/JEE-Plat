@@ -24,18 +24,18 @@ public enum Routes {
     NO_ROUTE("", params -> "");
 
     private String name;
-    private Function<Map, String> function;
+    private Function<Object, String> function;
 
     public String getName() {
         return name;
     }
 
-    Routes(String routeName, Function<Map, String> func) {
+    Routes(String routeName, Function<Object, String> func) {
         this.name = routeName;
         this.function = func;
     }
 
-    public String execQuery(Map params) {
+    public String execQuery(Object params) {
         return this.function.apply(params);
     }
 
