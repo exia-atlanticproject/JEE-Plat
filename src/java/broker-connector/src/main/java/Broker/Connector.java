@@ -23,6 +23,8 @@ public class Connector implements MessageListener, ExceptionListener {
     private Session session;
     private ConnectorStatus status = ConnectorStatus.DISCONNECTED;
 
+    private Consumer<MessageModel> onAll;
+
     private static Connector connector = new Connector();
 
     private Connector() {
@@ -46,9 +48,6 @@ public class Connector implements MessageListener, ExceptionListener {
     private void init(String url) throws Exception {
         listeners = new HashMap<>();
         logger.info("Connection...");
-//        ActiveMQSslConnectionFactory connectionFactory = new ActiveMQSslConnectionFactory(url);
-//        connectionFactory.setTrustStore(getClass().getClassLoader().getResource("client.ts").getPath());
-//        connectionFactory.setTrustStorePassword("password");
         ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory(url);
         connection = connectionFactory.createConnection("service", "safepw");
 
@@ -86,6 +85,14 @@ public class Connector implements MessageListener, ExceptionListener {
         producer.send(textMessage);
     }
 
+    public void emit(String topic, String message) throws JMSException {
+        MessageProducer producer = session.createProducer(session.createTopic(topic));
+        producer.setDeliveryMode(DeliveryMode.PERSISTENT);
+        TextMessage textMessage = session.createTextMessage();
+        textMessage.setText(message.charAt(0) + "\"origin\": \""+this.id+"\","+message.substring(1));
+        producer.send(textMessage);
+    }
+
     public void once(String topic, Consumer<MessageModel> callback) {
         this.listeners.put(topic, callback);
     }
@@ -98,8 +105,9 @@ public class Connector implements MessageListener, ExceptionListener {
         try {
             JSONObject jsonMsg = new JSONObject(message);
             Consumer<MessageModel> call = this.listeners.get(jsonMsg.getString("target"));
+            if (onAll != null) onAll.accept(new MessageModel(this.id, jsonMsg.getString("target"), jsonMsg.getString("callback"), jsonMsg.getString("action"), jsonMsg.get("payload")));
             if (call != null) {
-                call.accept(new MessageModel(this.id, jsonMsg.getString("target"), jsonMsg.get("payload")));
+                call.accept(new MessageModel(this.id, jsonMsg.getString("target"), jsonMsg.getString("callback"), jsonMsg.getString("action"), jsonMsg.get("payload")));
                 this.removeListener(jsonMsg.getString("target"));
             }
         } catch (Throwable e) {
@@ -108,6 +116,9 @@ public class Connector implements MessageListener, ExceptionListener {
 
     }
 
+    public void setOnAll(Consumer<MessageModel> onAll) {
+        this.onAll = onAll;
+    }
 
     @Override
     public void onException(JMSException e) {

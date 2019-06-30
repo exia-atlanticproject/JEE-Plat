@@ -19,7 +19,7 @@ class ConnectorTest {
     void connection() {
         try {
             Connector brokerConnector = Connector.getInstance();
-            brokerConnector.connect("mqtt://localhost:1883");
+            brokerConnector.connect("tcp://localhost:61616");
             brokerConnector.disconnect();
         } catch (Exception e) {
             fail("Unable to connect");
