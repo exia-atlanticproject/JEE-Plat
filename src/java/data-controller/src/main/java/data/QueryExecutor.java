@@ -8,18 +8,29 @@ import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 public class QueryExecutor {
     private Session session;
+    private static QueryExecutor instance = new QueryExecutor();
 
-    public QueryExecutor() {
+    private QueryExecutor() {
         session = new Configuration().configure().buildSessionFactory().openSession();
+    }
+
+    public static QueryExecutor getInstance(){
+        return instance;
     }
 
     public List getDevices() {
         Query query = session.createQuery("from DevicesEntity");
+        return query.list();
+    }
+
+    public List getUserDevices(int userId) {
+        Query query = session.createQuery("from DevicesEntity device where device.owner.id="+userId);
         return query.list();
     }
 
