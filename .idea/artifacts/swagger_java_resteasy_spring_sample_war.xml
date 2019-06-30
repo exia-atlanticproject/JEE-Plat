@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="swagger-java-resteasy-spring-sample:war">
+    <output-path>$PROJECT_DIR$/java/java-resteasy-spring/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>swagger-java-resteasy-spring-sample</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="swagger-java-resteasy-spring-sample-1.0.0.war">
+      <element id="artifact" artifact-name="swagger-java-resteasy-spring-sample:war exploded" />
+    </root>
+  </artifact>
+</component>

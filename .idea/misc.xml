@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/java/api-phone" />
+    <file type="web" url="file://$PROJECT_DIR$/java/java-grails2" />
+    <file type="web" url="file://$PROJECT_DIR$/java/java-jaxrs" />
+    <file type="web" url="file://$PROJECT_DIR$/java/java-jaxrs-cxf" />
+    <file type="web" url="file://$PROJECT_DIR$/java/java-jaxrs-no-annotations" />
+    <file type="web" url="file://$PROJECT_DIR$/java/java-jaxrs-no-webxml" />
+    <file type="web" url="file://$PROJECT_DIR$/java/java-jaxrs-subresource" />
+    <file type="web" url="file://$PROJECT_DIR$/java/java-jaxrs-wink" />
+    <file type="web" url="file://$PROJECT_DIR$/java/java-jersey-governator" />
+    <file type="web" url="file://$PROJECT_DIR$/java/java-jersey-jaxrs" />
+    <file type="web" url="file://$PROJECT_DIR$/java/java-jersey-jaxrs-multi" />
+    <file type="web" url="file://$PROJECT_DIR$/java/java-jersey-jaxrs-multi-simple-servlet" />
+    <file type="web" url="file://$PROJECT_DIR$/java/java-jersey-jaxrs-multi-simple-webxml" />
+    <file type="web" url="file://$PROJECT_DIR$/java/java-jersey-spring" />
+    <file type="web" url="file://$PROJECT_DIR$/java/java-jersey2" />
+    <file type="web" url="file://$PROJECT_DIR$/java/java-jersey2-guice" />
+    <file type="web" url="file://$PROJECT_DIR$/java/java-resteasy" />
+    <file type="web" url="file://$PROJECT_DIR$/java/java-resteasy-filter" />
+    <file type="web" url="file://$PROJECT_DIR$/java/java-resteasy-spring" />
+    <file type="web" url="file://$PROJECT_DIR$/java/java-servlet" />
+    <file type="web" url="file://$PROJECT_DIR$/java/swagger-petstore-v2" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/java/inflector-dropwizard-guice/pom.xml" />
+        <option value="$PROJECT_DIR$/java/inflector-dropwizard/pom.xml" />
+        <option value="$PROJECT_DIR$/java/inflector-jetty-webxml/pom.xml" />
+        <option value="$PROJECT_DIR$/java/java-dropwizard/pom.xml" />
+        <option value="$PROJECT_DIR$/java/java-grails2/pom.xml" />
+        <option value="$PROJECT_DIR$/java/java-jaxrs-cxf/pom.xml" />
+        <option value="$PROJECT_DIR$/java/java-jaxrs-no-annotations/pom.xml" />
+        <option value="$PROJECT_DIR$/java/java-jaxrs-no-webxml/pom.xml" />
+        <option value="$PROJECT_DIR$/java/java-jaxrs-subresource/pom.xml" />
+        <option value="$PROJECT_DIR$/java/java-jaxrs-wink/pom.xml" />
+        <option value="$PROJECT_DIR$/java/java-jersey-governator/pom.xml" />
+        <option value="$PROJECT_DIR$/java/java-jersey-jaxrs-multi-simple-servlet/pom.xml" />
+        <option value="$PROJECT_DIR$/java/java-jersey-jaxrs-multi-simple-webxml/pom.xml" />
+        <option value="$PROJECT_DIR$/java/java-jersey-jaxrs-multi/pom.xml" />
+        <option value="$PROJECT_DIR$/java/java-jersey-spring/pom.xml" />
+        <option value="$PROJECT_DIR$/java/java-jersey2-guice/pom.xml" />
+        <option value="$PROJECT_DIR$/java/java-mule/pom.xml" />
+        <option value="$PROJECT_DIR$/java/java-resteasy-filter/pom.xml" />
+        <option value="$PROJECT_DIR$/java/java-resteasy-spring/pom.xml" />
+        <option value="$PROJECT_DIR$/java/java-resteasy/pom.xml" />
+        <option value="$PROJECT_DIR$/java/java-servlet/pom.xml" />
+        <option value="$PROJECT_DIR$/java/swagger-petstore-v2/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/classes" />
+  </component>
+</project>
