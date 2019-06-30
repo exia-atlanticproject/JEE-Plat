@@ -14,5 +14,8 @@
         <property name="macAddress">
             <column name="mac_address" sql-type="varchar(50)" length="50"/>
         </property>
+        <many-to-one name="owner" class="data.model.UsersEntity">
+            <column name="id_Users"/>
+        </many-to-one>
     </class>
 </hibernate-mapping>
