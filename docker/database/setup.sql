@@ -28,7 +28,7 @@ CREATE TABLE Devices(
                         mac_address Varchar (50) ,
                         uid         VARCHAR (50) NOT NULL,
                         name         VARCHAR (200),
-                        id_Users    DOUBLE
+                        id_Users    Int
     ,CONSTRAINT Devices_PK PRIMARY KEY (id)
 
     ,CONSTRAINT Devices_Users_FK FOREIGN KEY (id_Users) REFERENCES Users(id)
@@ -41,7 +41,7 @@ CREATE TABLE Devices(
 
 CREATE TABLE Metrics(
                         id         Int  Auto_increment  NOT NULL ,
-                        value      Int NOT NULL ,
+                        value      Double NOT NULL ,
                         date       DATETIME NOT NULL ,
                         id_Devices Int NOT NULL
     ,CONSTRAINT Metrics_PK PRIMARY KEY (id)

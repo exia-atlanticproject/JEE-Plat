@@ -172,20 +172,20 @@ class QueryExecutorTest {
 
     @Test
     void addDevice() {
-        DevicesEntity device = queryExecutor.addDevice(UUID.randomUUID().toString(), "Test Model", "Name");
+        DevicesEntity device = queryExecutor.addDevice(UUID.randomUUID().toString(), "Test Model", "Name", UUID.randomUUID().toString());
         assertTrue(queryExecutor.getDevices().contains(device));
     }
 
     @Test
     void addMetric() throws ParseException {
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        MetricsEntity metric = queryExecutor.addMetric(Double.valueOf("42"), formatter.format(Calendar.getInstance().getTime()), UUID.randomUUID().toString()+5, "Model", "Name");
+        MetricsEntity metric = queryExecutor.addMetric(Double.valueOf("42"), formatter.format(Calendar.getInstance().getTime()), UUID.randomUUID().toString()+5, "Model", "Name", UUID.randomUUID().toString());
 //        assertTrue(queryExecutor.getMetrics().contains(metric));
     }
 
     @Test
     void linkDeviceToUser() {
-        DevicesEntity device = queryExecutor.addDevice(UUID.randomUUID().toString(), "Test Model", "Name");
+        DevicesEntity device = queryExecutor.addDevice(UUID.randomUUID().toString(), "Test Model", "Name", UUID.randomUUID().toString());
         queryExecutor.linkDeviceToUser(1, device.getId());
 
         assertEquals(queryExecutor.getDevice(device.getId()).getOwner().getId(), 1);

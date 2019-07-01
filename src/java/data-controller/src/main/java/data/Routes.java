@@ -53,6 +53,12 @@ public enum Routes {
         QueryExecutor.getInstance().addDevice(params.getDeviceMac(), params.getDeviceModel(), params.getDeviceName(), params.getDeviceUid());
         return "";
     }),
+    LOGIN("login", payload -> {
+        LoginUserMessage params = LoginUserMessage.parse(payload);
+        log(params.toString());
+        QueryExecutor.getInstance().login(params);
+        return "";
+    }),
     LINK_DEVICE_USER("LinkDevUser", payload -> {
         QueryExecutor.getInstance().linkDeviceToUser(LinkDeviceUserMessage.parse(payload).getUserUid(), LinkDeviceUserMessage.parse(payload).getDeviceId());
         return "";
