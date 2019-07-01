@@ -1,6 +1,6 @@
-package io.swagger.sample.model;
+package com.crux.demo.api.model;
 
-import io.swagger.annotations.ApiModelProperty;
+import com.wordnik.swagger.annotations.ApiModelProperty;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;

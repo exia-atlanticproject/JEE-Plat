@@ -1,4 +1,4 @@
-package io.swagger.sample.model;
+package com.crux.demo.api.model;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;

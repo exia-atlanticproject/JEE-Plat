@@ -1,9 +1,9 @@
-package io.swagger.sample.resource;
+package com.crux.demo.api.resources;
 
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiParam;
-import io.swagger.sample.model.Metrics;
+import com.crux.demo.api.model.Metrics;
+import com.wordnik.swagger.annotations.Api;
+import com.wordnik.swagger.annotations.ApiOperation;
+import com.wordnik.swagger.annotations.ApiParam;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -28,6 +28,8 @@ public class MetricsResource {
     @Path("/job")
     @ApiOperation(value = "Request a new computation job",
             response = String.class)
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
     public Response requestNewComputation() {
         return Response.ok().build();
     }
