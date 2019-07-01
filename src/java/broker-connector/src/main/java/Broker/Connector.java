@@ -23,6 +23,8 @@ public class Connector implements MessageListener, ExceptionListener {
     private Session session;
     private ConnectorStatus status = ConnectorStatus.DISCONNECTED;
 
+    private Consumer<MessageModel> onMessageReceived;
+
     private static Connector connector = new Connector();
 
     private Connector() {
@@ -46,9 +48,6 @@ public class Connector implements MessageListener, ExceptionListener {
     private void init(String url) throws Exception {
         listeners = new HashMap<>();
         logger.info("Connection...");
-//        ActiveMQSslConnectionFactory connectionFactory = new ActiveMQSslConnectionFactory(url);
-//        connectionFactory.setTrustStore(getClass().getClassLoader().getResource("client.ts").getPath());
-//        connectionFactory.setTrustStorePassword("password");
         ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory(url);
         connection = connectionFactory.createConnection("service", "safepw");
 
@@ -77,17 +76,22 @@ public class Connector implements MessageListener, ExceptionListener {
         this.status = ConnectorStatus.DISCONNECTED;
     }
 
-    public void emit(String topic, JSONObject message) throws JMSException {
+    public void emit(String topic, String message) throws JMSException {
         MessageProducer producer = session.createProducer(session.createTopic(topic));
         producer.setDeliveryMode(DeliveryMode.PERSISTENT);
         TextMessage textMessage = session.createTextMessage();
-        message.put("origin", this.id);
-        textMessage.setText(message.toString());
+        JSONObject json = new JSONObject(message);
+        json.put("origin", this.id);
+        textMessage.setText(json.toString());
         producer.send(textMessage);
     }
 
     public void once(String topic, Consumer<MessageModel> callback) {
         this.listeners.put(topic, callback);
+    }
+
+    public void setOnMessageReceived(Consumer<MessageModel> onMessage) {
+        this.onMessageReceived = onMessage;
     }
 
     public void removeListener(String topic) {
@@ -98,8 +102,9 @@ public class Connector implements MessageListener, ExceptionListener {
         try {
             JSONObject jsonMsg = new JSONObject(message);
             Consumer<MessageModel> call = this.listeners.get(jsonMsg.getString("target"));
+            if (onMessageReceived != null) onMessageReceived.accept(new MessageModel(this.id, jsonMsg.getString("target"), jsonMsg.getString("action"), jsonMsg.getString("callback"), jsonMsg.get("payload")));
             if (call != null) {
-                call.accept(new MessageModel(this.id, jsonMsg.getString("target"), jsonMsg.get("payload")));
+                call.accept(new MessageModel(this.id, jsonMsg.getString("target"), jsonMsg.getString("action"), jsonMsg.getString("callback"), jsonMsg.get("payload")));
                 this.removeListener(jsonMsg.getString("target"));
             }
         } catch (Throwable e) {
