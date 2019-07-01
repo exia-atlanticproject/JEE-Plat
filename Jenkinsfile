@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'cd ./JEE-Plat/src'
+        sh 'ls'
         sh 'mvn compiler:compile'
       }
     }
