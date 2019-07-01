@@ -18,7 +18,11 @@
             <column name="email" sql-type="varchar(50)" length="50"/>
         </property>
         <property name="role">
-            <column name="role" sql-type="enum('CLIENT', 'ADMIN')"/>
+            <column name="role"/>
+            <type name="org.hibernate.type.EnumType">
+                <param name="enumClass">data.model.UserRoles</param>
+                <param name="useNamed">true</param>
+            </type>
         </property>
     </class>
 </hibernate-mapping>

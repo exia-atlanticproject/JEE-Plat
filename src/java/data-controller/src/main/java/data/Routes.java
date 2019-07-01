@@ -1,6 +1,7 @@
 package data;
 
 import data.model.DevicesEntity;
+import data.model.UsersEntity;
 import org.json.JSONArray;
 
 import java.util.List;
@@ -10,11 +11,15 @@ import java.util.stream.Collectors;
 
 public enum Routes {
     GET_DEVICES("GetDevices", params -> {
-         List list = (List) QueryExecutor.getInstance().getDevices().stream()
-                .map(device -> ((DevicesEntity)device).toJsonString()).collect(Collectors.toList());
+         List list = QueryExecutor.getInstance().getDevices().stream()
+                .map(DevicesEntity::toJsonString).collect(Collectors.toList());
         return new JSONArray(list).toString();
     }),
-    GET_USERS("GetUsers", params -> "[{\"id\": 1, \"username\": \"test\", \"name\": \"test\", \"email\": \"test@email.com\", \"role\": \"CLIENT\"}]"),
+    GET_USERS("GetUsers", params -> {
+        List list = QueryExecutor.getInstance().getUsers().stream()
+                .map(UsersEntity::toJsonString).collect(Collectors.toList());
+        return new JSONArray(list).toString();
+    }),
     GET_USER_DEVICES("GetUserDevices", params -> "[{\"id\": 1, \"mode\": \"test\", \"mac_address\": \"abcdefg55\"}]"),
     GET_DEVICE("GetDevice", params -> "{\"id\": 1, \"mode\": \"test\", \"mac_address\": \"abcdefg55\"}"),
     GET_USER("GetUser", params -> "{\"id\": 1, \"username\": \"test\", \"name\": \"test\", \"email\": \"test@email.com\", \"role\": \"CLIENT\"}"),

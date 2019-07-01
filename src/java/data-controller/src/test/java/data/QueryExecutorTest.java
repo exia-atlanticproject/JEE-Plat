@@ -5,18 +5,15 @@ import data.model.MetricsEntity;
 import data.model.UsersEntity;
 import org.junit.jupiter.api.*;
 
-import javax.swing.plaf.nimbus.State;
 import java.sql.*;
-import java.text.DateFormat;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.List;
-import java.util.Locale;
-import java.util.Set;
 import java.util.UUID;
 import java.util.logging.Level;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class QueryExecutorTest {
@@ -29,14 +26,6 @@ class QueryExecutorTest {
         java.util.logging.Logger.getLogger("org.hibernate").setLevel(Level.OFF);
         connection = DriverManager.getConnection("jdbc:mysql://localhost:23506/atlantis", "root", "root");
         queryExecutor = QueryExecutor.getInstance();
-    }
-
-    @BeforeEach
-    void setUp() throws SQLException {
-    }
-
-    @AfterEach
-    void tearDown() throws SQLException {
     }
 
     @AfterAll
@@ -151,17 +140,33 @@ class QueryExecutorTest {
     @Test
     void getMetricsWithStartDate() throws SQLException {
         Statement statement = connection.createStatement();
-        ResultSet result = statement.executeQuery("SELECT COUNT(*) FROM Metrics WHERE id_Devices = 1;");
+        ResultSet result = statement.executeQuery("SELECT COUNT(*) FROM Metrics WHERE id_Devices = 1 AND date >= '2019-01-01';");
         result.next();
         int count = result.getInt(1);
 
-        List<MetricsEntity> metrics = queryExecutor.getMetrics(1);
+        Calendar date = Calendar.getInstance();
+        date.set(2019, 1, 1);
+
+        List<MetricsEntity> metrics = queryExecutor.getMetrics(1, new Date(date.getTimeInMillis()));
         Assertions.assertEquals(count, metrics.size());
         statement.close();
     }
 
     @Test
-    void getMetricsWithStartAndEndDate() {
+    void getMetricsWithStartAndEndDate() throws SQLException {
+        Statement statement = connection.createStatement();
+        ResultSet result = statement.executeQuery("SELECT COUNT(*) FROM Metrics WHERE id_Devices = 1 AND date >= '2019-01-01' AND date <='2019-01-02';");
+        result.next();
+        int count = result.getInt(1);
+
+        Calendar start = Calendar.getInstance();
+        start.set(2019, Calendar.JANUARY, 1);
+        Calendar end = Calendar.getInstance();
+        end.set(2019, Calendar.JANUARY, 2);
+
+        List metrics = queryExecutor.getMetrics(1, new Date(start.getTime().getTime()), new Date(end.getTime().getTime()));
+        Assertions.assertEquals(count, metrics.size());
+        statement.close();
     }
 
     @Test
