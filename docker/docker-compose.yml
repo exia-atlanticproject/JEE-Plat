@@ -2,8 +2,8 @@ version: "3.3"
 services:
   broker:
     image: webcenter/activemq:latest
-#    volumes:
-#      - ./activemq_conf:/opt/activemq/conf
+    volumes:
+      - ./activemq_conf:/opt/activemq/conf
     ports:
       - 1883:1883
       - 61616:61616
