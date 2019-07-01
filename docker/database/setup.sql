@@ -25,7 +25,9 @@ CREATE TABLE Users(
 CREATE TABLE Devices(
                         id          Int  Auto_increment  NOT NULL ,
                         model       Varchar (50) NOT NULL ,
-                        mac_address Varchar (50) NOT NULL ,
+                        mac_address Varchar (50) ,
+                        uid         VARCHAR (50) NOT NULL,
+                        name         VARCHAR (200),
                         id_Users    DOUBLE
     ,CONSTRAINT Devices_PK PRIMARY KEY (id)
 

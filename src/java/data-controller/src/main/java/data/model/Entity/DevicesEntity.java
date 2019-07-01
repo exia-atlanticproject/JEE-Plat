@@ -14,6 +14,8 @@ public class DevicesEntity implements Response {
     private int id;
     private String model;
     private String macAddress;
+    private String uid;
+    private String name;
     private UsersEntity owner;
 
     @Id
@@ -38,7 +40,27 @@ public class DevicesEntity implements Response {
     }
 
     @Basic
-    @Column(name = "mac_address", nullable = false, length = 50, unique = true)
+    @Column(name = "uid", nullable = false, length = 50, unique = true)
+    public String getUid() {
+        return uid;
+    }
+
+    public void setUid(String uid) {
+        this.uid = uid;
+    }
+
+    @Basic
+    @Column(name = "name", length = 200, unique = true)
+    public String getName() {
+        return uid;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Basic
+    @Column(name = "mac_address", length = 50, unique = true)
     public String getMacAddress() {
         return macAddress;
     }
