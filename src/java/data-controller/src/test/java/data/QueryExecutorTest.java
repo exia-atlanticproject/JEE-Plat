@@ -1,12 +1,13 @@
 package data;
 
-import data.model.DevicesEntity;
-import data.model.MetricsEntity;
-import data.model.UsersEntity;
+import data.model.Entity.DevicesEntity;
+import data.model.Entity.MetricsEntity;
+import data.model.Entity.UsersEntity;
 import org.junit.jupiter.api.*;
 
 import java.sql.*;
 import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.List;
 import java.util.UUID;
@@ -104,25 +105,21 @@ class QueryExecutorTest {
     }
 
     @Test
-    void getUserWithEmail() throws SQLException {
+    void getUserWithUid() throws SQLException {
         Statement statement = connection.createStatement();
-        ResultSet result = statement.executeQuery("SELECT * FROM Users WHERE email = 'user.test@mail.com';");
+        ResultSet result = statement.executeQuery("SELECT * FROM Users WHERE uid = 'User';");
         result.next();
         int id = result.getInt(1);
         String name = result.getString(2);
         String surname = result.getString(3);
         String email = result.getString(4);
 
-        UsersEntity users = queryExecutor.getUser(1);
+        UsersEntity users = queryExecutor.getUser("User");
         Assertions.assertEquals(id, users.getId());
         Assertions.assertEquals(name, users.getName());
         Assertions.assertEquals(surname, users.getSurname());
         Assertions.assertEquals(email, users.getEmail());
         statement.close();
-    }
-
-    @Test
-    void addMetric() throws SQLException, ParseException {
     }
 
     @Test
@@ -147,7 +144,9 @@ class QueryExecutorTest {
         Calendar date = Calendar.getInstance();
         date.set(2019, 1, 1);
 
-        List<MetricsEntity> metrics = queryExecutor.getMetrics(1, new Date(date.getTimeInMillis()));
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+        List<MetricsEntity> metrics = queryExecutor.getMetrics(1, formatter.format(date.getTime()));
         Assertions.assertEquals(count, metrics.size());
         statement.close();
     }
@@ -164,20 +163,29 @@ class QueryExecutorTest {
         Calendar end = Calendar.getInstance();
         end.set(2019, Calendar.JANUARY, 2);
 
-        List metrics = queryExecutor.getMetrics(1, new Date(start.getTime().getTime()), new Date(end.getTime().getTime()));
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+        List metrics = queryExecutor.getMetrics(1, formatter.format(start.getTime()), formatter.format(end.getTime()));
         Assertions.assertEquals(count, metrics.size());
         statement.close();
     }
 
     @Test
     void addDevice() {
-        DevicesEntity device = queryExecutor.addDevice("Test Model", UUID.randomUUID().toString());
+        DevicesEntity device = queryExecutor.addDevice(UUID.randomUUID().toString(), "Test Model", "Name");
         assertTrue(queryExecutor.getDevices().contains(device));
     }
 
     @Test
+    void addMetric() throws ParseException {
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        MetricsEntity metric = queryExecutor.addMetric(Double.valueOf("42"), formatter.format(Calendar.getInstance().getTime()), UUID.randomUUID().toString()+5, "Model", "Name");
+//        assertTrue(queryExecutor.getMetrics().contains(metric));
+    }
+
+    @Test
     void linkDeviceToUser() {
-        DevicesEntity device = queryExecutor.addDevice("Test Model", UUID.randomUUID().toString());
+        DevicesEntity device = queryExecutor.addDevice(UUID.randomUUID().toString(), "Test Model", "Name");
         queryExecutor.linkDeviceToUser(1, device.getId());
 
         assertEquals(queryExecutor.getDevice(device.getId()).getOwner().getId(), 1);

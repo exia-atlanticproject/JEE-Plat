@@ -15,11 +15,10 @@ public class QueryRouter {
     }
 
     void dispatch(MessageModel message) {
-        //TODO transform Object payload into map
-        String result = Routes.findRoute(message.getAction()).execQuery(null);
+        String result = Routes.findRoute(message.getAction()).execQuery(message.getPayload());
         if (!message.getCallback().equals("")) {
             try {
-                brokerconnector.emit(message.getCallback(), result);
+                message.respond(brokerconnector, result);
             } catch (JMSException e) {
                 e.printStackTrace();
             }

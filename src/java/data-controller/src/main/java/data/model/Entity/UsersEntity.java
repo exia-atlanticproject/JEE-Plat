@@ -1,5 +1,6 @@
-package data.model;
+package data.model.Entity;
 
+import data.model.Response;
 import org.json.JSONObject;
 
 import javax.persistence.*;
@@ -10,6 +11,7 @@ import java.util.Objects;
 @Table(name = "Users", schema = "atlantis")
 public class UsersEntity implements Response, Serializable {
     private int id;
+    private String uid;
     private String name;
     private String surname;
     private String email;
@@ -24,6 +26,16 @@ public class UsersEntity implements Response, Serializable {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    @Basic
+    @Column(name = "uid", nullable = false, length = 50)
+    public String getUid() {
+        return name;
+    }
+
+    public void setUid(String name) {
+        this.name = name;
     }
 
     @Basic

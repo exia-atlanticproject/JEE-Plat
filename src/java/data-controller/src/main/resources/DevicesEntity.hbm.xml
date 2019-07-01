@@ -4,7 +4,7 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="data.model.DevicesEntity" table="Devices" schema="atlantis">
+    <class name="data.model.Entity.DevicesEntity" table="Devices" schema="atlantis">
         <id name="id">
             <column name="id" sql-type="int(11)"/>
         </id>
@@ -14,7 +14,7 @@
         <property name="macAddress">
             <column name="mac_address" sql-type="varchar(50)" length="50"/>
         </property>
-        <many-to-one name="owner" class="data.model.UsersEntity">
+        <many-to-one name="owner" class="data.model.Entity.UsersEntity">
             <column name="id_Users"/>
         </many-to-one>
     </class>

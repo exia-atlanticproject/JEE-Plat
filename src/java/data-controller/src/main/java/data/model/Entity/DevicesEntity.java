@@ -1,7 +1,8 @@
 
-package data.model;
+package data.model.Entity;
 
 
+import data.model.Response;
 import org.json.JSONObject;
 
 import javax.persistence.*;
