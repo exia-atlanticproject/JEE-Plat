@@ -83,13 +83,22 @@ public class Connector implements MessageListener, ExceptionListener {
     }
 
     public void emit(String topic, String message) throws JMSException {
+        emit(topic, message, null);
+    }
+
+    public void emit(String topic, String message, Consumer<MessageModel> callback) throws JMSException {
+
+        String source = UUID.randomUUID().toString();
+
         MessageProducer producer = session.createProducer(session.createTopic(topic));
         producer.setDeliveryMode(DeliveryMode.PERSISTENT);
         TextMessage textMessage = session.createTextMessage();
         JSONObject json = new JSONObject(message);
-        json.put("origin", this.id);
+        json.put("callback", this.id);
+        json.put("source", source);
         textMessage.setText(json.toString());
         producer.send(textMessage);
+        this.once(source, callback);
     }
 
     public void once(String topic, Consumer<MessageModel> callback) {
@@ -107,11 +116,11 @@ public class Connector implements MessageListener, ExceptionListener {
     private void messageHandler(String message) {
         try {
             JSONObject jsonMsg = new JSONObject(message);
-            Consumer<MessageModel> call = this.listeners.get(jsonMsg.getString("target"));
-            if (onMessageReceived != null) onMessageReceived.accept(new MessageModel(this.id, jsonMsg.getString("target"), jsonMsg.getString("action"), jsonMsg.getString("callback"), jsonMsg.get("payload")));
+            Consumer<MessageModel> call = this.listeners.get(jsonMsg.getString("source"));
+            if (onMessageReceived != null) onMessageReceived.accept(new MessageModel(jsonMsg.getString("source"), jsonMsg.getString("action"), jsonMsg.getString("callback"), jsonMsg.get("payload")));
             if (call != null) {
-                call.accept(new MessageModel(this.id, jsonMsg.getString("target"), jsonMsg.getString("action"), jsonMsg.getString("callback"), jsonMsg.get("payload")));
-                this.removeListener(jsonMsg.getString("target"));
+                call.accept(new MessageModel(jsonMsg.getString("source"), jsonMsg.getString("action"), jsonMsg.getString("callback"), jsonMsg.get("payload")));
+                this.removeListener(jsonMsg.getString("source"));
             }
         } catch (Throwable e) {
             logger.error(String.format("Malformed message: %s", message));

@@ -6,6 +6,7 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import io.swagger.sample.model.Device;
 import io.swagger.sample.util.BrokerConnector;
+import model.MessageModel;
 import org.json.JSONObject;
 
 import javax.jms.JMSException;
@@ -32,6 +33,10 @@ public class DeviceResource {
         return Response.ok().build();
     }
 
+    private void lol(MessageModel message) {
+        System.out.println(message);
+    }
+
     @POST
     @Path("/command/{idDevice}")
     @ApiOperation(value = "Send a command to a device", response = String.class)
@@ -43,7 +48,7 @@ public class DeviceResource {
         command.put("idCommand", 1);
 
         try {
-            connector.emit("command", command);
+            connector.emit("Data-Controller", command.toString(), this::lol);
             return Response.ok().entity("Command successfully sent").build();
         } catch (JMSException e) {
             e.printStackTrace();

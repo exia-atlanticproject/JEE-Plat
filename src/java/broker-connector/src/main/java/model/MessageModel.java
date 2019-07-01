@@ -1,26 +1,21 @@
 package model;
 
 public class MessageModel {
-    private String connector;
-    private String target;
+
+    private String source;
     private String callback;
     private String action;
     private Object payload;
 
-    public MessageModel(String connector, String target, String action, String callback, Object payload) {
-        this.connector = connector;
-        this.target = target;
+    public MessageModel(String source, String action, String callback, Object payload) {
         this.payload = payload;
         this.callback = callback;
+        this.source = source;
         this.action = action;
     }
 
-    public String getConnector() {
-        return connector;
-    }
-
-    public String getTarget() {
-        return target;
+    public String getSource() {
+        return source;
     }
 
     public Object getPayload() {
@@ -38,8 +33,6 @@ public class MessageModel {
     @Override
     public String toString() {
         return "MessageModel{" +
-                "connector='" + connector + '\'' +
-                ", target='" + target + '\'' +
                 ", payload=" + payload +
                 ", callback=" + callback +
                 ", action=" + action +
