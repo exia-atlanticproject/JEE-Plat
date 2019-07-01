@@ -8,6 +8,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
+        ws(dir: './JEE-Plat/src')
         sh 'mvn compiler:compile'
       }
     }
