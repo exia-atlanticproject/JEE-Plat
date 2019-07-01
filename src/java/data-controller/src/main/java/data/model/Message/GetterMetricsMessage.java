@@ -3,6 +3,8 @@ package data.model.Message;
 import org.json.JSONObject;
 
 import java.sql.Date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 
 public class GetterMetricsMessage {
     private int deviceId;
@@ -45,20 +47,83 @@ public class GetterMetricsMessage {
         return deviceName;
     }
 
+    private static SimpleDateFormat parser = new SimpleDateFormat("MM/dd/yy HH:mm:ss a");
+    static SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+
     public static GetterMetricsMessage parse(Object payload) {
         JSONObject jsonObject = ((JSONObject) payload);
-        if (jsonObject.has("id")) return new GetterMetricsMessage(jsonObject.getInt("id"), jsonObject.getString("start"),  jsonObject.getString("end"));
-        return new GetterMetricsMessage(0, ((JSONObject) payload).getString("start"),  ((JSONObject) payload).getString("end"));
+        if (jsonObject.has("id")) {
+            try {
+                return new GetterMetricsMessage(
+                        jsonObject.getInt("id"),
+                        formatter.format(parser.parse(jsonObject.getString("start"))),
+                        formatter.format(parser.parse(jsonObject.getString("end")))
+                );
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+        }
+        try {
+            return new GetterMetricsMessage(
+                    0,
+                    formatter.format(parser.parse(jsonObject.getString("start"))),
+                    formatter.format(parser.parse(jsonObject.getString("end")))
+            );
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     public static GetterMetricsMessage parseCalculation(Object payload) {
         JSONObject jsonObject = ((JSONObject) payload);
-        if (jsonObject.has("id")) return new GetterMetricsMessage(jsonObject.getInt("id"), jsonObject.getString("startJob"),  jsonObject.getString("endJob"));
-        return new GetterMetricsMessage(0, jsonObject.getString("startJob"),  jsonObject.getString("endJob"));
+        if (jsonObject.has("id")) {
+            try {
+                return new GetterMetricsMessage(
+                        jsonObject.getInt("id"),
+                        formatter.format(parser.parse(jsonObject.getString("startJob"))),
+                        formatter.format(parser.parse(jsonObject.getString("endJob")))
+                );
+            } catch (ParseException e) {
+                e.printStackTrace();
+            }
+        }
+        try {
+            return new GetterMetricsMessage(
+                    0,
+                    formatter.format(parser.parse(jsonObject.getString("startJob"))),
+                    formatter.format(parser.parse(jsonObject.getString("endJob")))
+            );
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     public static GetterMetricsMessage parseWithInsert(Object payload) {
         JSONObject jsonObject = ((JSONObject) payload);
-        return new GetterMetricsMessage(0, jsonObject.getString("startJob"),  jsonObject.getString("endJob"), jsonObject.getString("deviceType"), jsonObject.getString("deviceName"));
+        try {
+            return new GetterMetricsMessage(
+                    0,
+                    formatter.format(parser.parse(jsonObject.getString("startJob"))),
+                    formatter.format(parser.parse(jsonObject.getString("endJob"))),
+                    jsonObject.getString("deviceType"),
+                    jsonObject.getString("deviceName")
+            );
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @Override
+    public String toString() {
+        return "GetterMetricsMessage{" +
+                "deviceId=" + deviceId +
+                ", start='" + start + '\'' +
+                ", end='" + end + '\'' +
+                ", deviceModel='" + deviceModel + '\'' +
+                ", deviceName='" + deviceName + '\'' +
+                '}';
     }
 }

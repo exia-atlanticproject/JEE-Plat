@@ -16,4 +16,11 @@ public class GetterWithIdMessage {
     public static GetterWithIdMessage parse(Object object) {
         return new GetterWithIdMessage(((JSONObject) object).getInt("id"));
     }
+
+    @Override
+    public String toString() {
+        return "GetterWithIdMessage{" +
+                "objectId=" + objectId +
+                '}';
+    }
 }

@@ -1,6 +1,12 @@
 package data.model.Message;
 
+import org.apache.openjpa.persistence.jest.JSON;
 import org.json.JSONObject;
+
+import java.text.FieldPosition;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.stream.Collectors;
 
 public class AddMetricMessage {
     private String deviceId;
@@ -44,14 +50,34 @@ public class AddMetricMessage {
     }
 
     public static AddMetricMessage parse(Object payload) {
-        JSONObject jsonObject = new JSONObject(payload);
-        return new AddMetricMessage(
-                jsonObject.getString("deviceId"),
-                jsonObject.getString("metricDate"),
-                jsonObject.getDouble("metricValue"),
-                jsonObject.getString("deviceType"),
-                jsonObject.getString("macAddress"),
-                jsonObject.getString("deviceName")
-        );
+        JSONObject jsonObject = (JSONObject)payload;
+        SimpleDateFormat parser = new SimpleDateFormat("MM/dd/yy HH:mm:ss a");
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+        try {
+            Date date = parser.parse(jsonObject.getString("metricDate"));
+            return new AddMetricMessage(
+                    jsonObject.getString("deviceId"),
+                    formatter.format(date),
+                    jsonObject.getDouble("metricValue"),
+                    jsonObject.getString("deviceType"),
+                    jsonObject.getString("macAddress"),
+                    jsonObject.getString("deviceName")
+            );
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @Override
+    public String toString() {
+        return "AddMetricMessage{" +
+                "deviceId='" + deviceId + '\'' +
+                ", metricDate='" + metricDate + '\'' +
+                ", metricValue=" + metricValue +
+                ", deviceType='" + deviceType + '\'' +
+                ", macAddress='" + macAddress + '\'' +
+                ", deviceName='" + deviceName + '\'' +
+                '}';
     }
 }

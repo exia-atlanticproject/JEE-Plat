@@ -23,4 +23,12 @@ public class LinkDeviceUserMessage {
     public static LinkDeviceUserMessage parse(Object payload) {
         return new LinkDeviceUserMessage(((JSONObject)payload).getInt("userId"), ((JSONObject)payload).getInt("deviceId"));
     }
+
+    @Override
+    public String toString() {
+        return "LinkDeviceUserMessage{" +
+                "userUid=" + userUid +
+                ", deviceId=" + deviceId +
+                '}';
+    }
 }

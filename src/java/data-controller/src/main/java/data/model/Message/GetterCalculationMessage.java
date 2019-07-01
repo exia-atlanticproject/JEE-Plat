@@ -2,19 +2,18 @@ package data.model.Message;
 
 import org.json.JSONObject;
 
-import java.sql.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
+import java.util.Date;
 
 public class GetterCalculationMessage {
-    private Date start;
-    private Date end;
+    private String start;
+    private String end;
     private int userId;
     private String nameJob;
 
 
-    public GetterCalculationMessage(Date start, Date end, int userId, String nameJob) {
+    public GetterCalculationMessage(String start, String end, int userId, String nameJob) {
         this.start = start;
         this.end = end;
         this.userId = userId;
@@ -23,15 +22,32 @@ public class GetterCalculationMessage {
 
     public static GetterCalculationMessage parse(Object payload) {
         JSONObject jsonObject = ((JSONObject)payload);
-        Calendar start = Calendar.getInstance();
-        Calendar end = Calendar.getInstance();
-        SimpleDateFormat dateFormat = new SimpleDateFormat();
+        SimpleDateFormat parser = new SimpleDateFormat("MM/dd/yy HH:mm:ss a");
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+
+        Date start = null;
+        Date end = null;
         try {
-            start.setTime(dateFormat.parse(jsonObject.getString("startJob")));
-            end.setTime(dateFormat.parse(jsonObject.getString("endJob")));
+            start = parser.parse(jsonObject.getString("startJob"));
+            end = parser.parse(jsonObject.getString("endJob"));
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        return new GetterCalculationMessage(new Date(start.getTime().getTime()), new Date(end.getTime().getTime()), jsonObject.getInt("userId"), jsonObject.getString("nameJob"));
+        return new GetterCalculationMessage(
+                formatter.format(start),
+                formatter.format(end),
+                jsonObject.getInt("userId"),
+                jsonObject.getString("nameJob")
+        );
+    }
+
+    @Override
+    public String toString() {
+        return "GetterCalculationMessage{" +
+                "start=" + start +
+                ", end=" + end +
+                ", userId=" + userId +
+                ", nameJob='" + nameJob + '\'' +
+                '}';
     }
 }

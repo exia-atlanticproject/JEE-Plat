@@ -16,4 +16,11 @@ public class GetterUserWithUidMessage {
     public static GetterUserWithUidMessage parse(Object object) {
         return new GetterUserWithUidMessage(((JSONObject) object).getString("id"));
     }
+
+    @Override
+    public String toString() {
+        return "GetterUserWithUidMessage{" +
+                "uid='" + uid + '\'' +
+                '}';
+    }
 }
