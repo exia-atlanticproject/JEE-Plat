@@ -9,6 +9,7 @@
 
 CREATE TABLE Users(
                       id      Int  Auto_increment  NOT NULL ,
+                      uid     Varchar (50) NOT NULL ,
                       name    Varchar (50) NOT NULL ,
                       surname Varchar (50) NOT NULL ,
                       email   Varchar (50) NOT NULL,
@@ -24,8 +25,10 @@ CREATE TABLE Users(
 CREATE TABLE Devices(
                         id          Int  Auto_increment  NOT NULL ,
                         model       Varchar (50) NOT NULL ,
-                        mac_address Varchar (50) NOT NULL ,
-                        id_Users    Int
+                        mac_address Varchar (50) ,
+                        uid         VARCHAR (50) NOT NULL,
+                        name         VARCHAR (200),
+                        id_Users    DOUBLE
     ,CONSTRAINT Devices_PK PRIMARY KEY (id)
 
     ,CONSTRAINT Devices_Users_FK FOREIGN KEY (id_Users) REFERENCES Users(id)
@@ -39,7 +42,7 @@ CREATE TABLE Devices(
 CREATE TABLE Metrics(
                         id         Int  Auto_increment  NOT NULL ,
                         value      Int NOT NULL ,
-                        date       Date NOT NULL ,
+                        date       DATETIME NOT NULL ,
                         id_Devices Int NOT NULL
     ,CONSTRAINT Metrics_PK PRIMARY KEY (id)
 

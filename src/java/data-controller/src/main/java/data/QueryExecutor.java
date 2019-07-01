@@ -1,8 +1,8 @@
 package data;
 
-import data.model.DevicesEntity;
-import data.model.MetricsEntity;
-import data.model.UsersEntity;
+import data.model.Entity.DevicesEntity;
+import data.model.Entity.MetricsEntity;
+import data.model.Entity.UsersEntity;
 import org.hibernate.Session;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
@@ -27,7 +27,7 @@ public class QueryExecutor {
         return query.list();
     }
 
-    public List getUserDevices(int userId) {
+    public List<DevicesEntity> getUserDevices(int userId) {
         Query query = session.createQuery("from DevicesEntity device where device.owner.id="+userId);
         return query.list();
     }
@@ -45,52 +45,71 @@ public class QueryExecutor {
         return session.get(UsersEntity.class, id);
     }
 
-    public UsersEntity getUser(String email) {
-        return session.get(UsersEntity.class, email);
+    public UsersEntity getUser(String uid) {
+        return (UsersEntity) session.createQuery("from UsersEntity user where user.uid='"+uid+"'").list().get(0);
     }
 
     public List getMetrics(int deviceId) {
-        return session.createQuery("from MetricsEntity metric ").list();
+        return session.createQuery("from MetricsEntity metric where metric.devicesByIdDevices="+deviceId).list();
 
     }
 
-    public List getMetrics(int deviceId, Date start) {
-        return session.createQuery("from MetricsEntity metric where metric.date >= '"+start+"'").list();
+    public List getMetrics(int deviceId, String start) {
+        return session.createQuery("from MetricsEntity metric where metric.date >= '"+start+"' and metric.devicesByIdDevices="+deviceId).list();
 
     }
 
-    public List getMetrics(int deviceId, Date start, Date end) {
+    public List<MetricsEntity> getMetrics(int deviceId, String start, String end) {
+        return session.createQuery("from MetricsEntity metric where metric.date >= '"+start+"' and metric.date <='"+end+"' and metric.devicesByIdDevices="+deviceId).list();
+    }
+
+    public List<MetricsEntity> getMetrics(String start, String end) {
         return session.createQuery("from MetricsEntity metric where metric.date >= '"+start+"' and metric.date <='"+end+"'").list();
     }
 
     public void createUser(UsersEntity user) {
-        session.getTransaction().begin();
+        if (!session.getTransaction().isActive()) session.getTransaction().begin();
         session.save(user);
         session.getTransaction().commit();
     }
 
-    public DevicesEntity addDevice(String model, String mac) {
-        session.getTransaction().begin();
+    public DevicesEntity addDevice(String deviceMac, String deviceModel, String deviceName, String deviceUid) {
+        if (!session.getTransaction().isActive()) session.getTransaction().begin();
         DevicesEntity device = new DevicesEntity();
-        device.setMacAddress(mac);
-        device.setModel(model);
+        device.setMacAddress(deviceMac);
+        device.setModel(deviceModel);
+        device.setUid(deviceUid);
+        device.setName(deviceName);
         session.save(device);
         session.flush();
         session.getTransaction().commit();
-        return (DevicesEntity) session.createQuery(String.format("FROM DevicesEntity D WHERE D.macAddress = '%s'", mac)).uniqueResult();
+        return (DevicesEntity) session.createQuery(String.format("FROM DevicesEntity D WHERE D.macAddress = '%s'", deviceMac)).uniqueResult();
     }
 
-    public MetricsEntity addMetric(int value, java.sql.Date date, String deviceMac){
+    public MetricsEntity addMetric(double value, String date, String deviceMac, String deviceModel, String deviceName, String deviceId){
         MetricsEntity metric = new MetricsEntity();
         metric.setDate(date);
         metric.setValue(value);
-        metric.setDevicesByIdDevices(session.get(DevicesEntity.class, deviceMac));
+        DevicesEntity metricDevice;
+        List device = session.createQuery("from DevicesEntity device where device.macAddress='"+deviceMac+"'").list();
+        if (!session.getTransaction().isActive()) session.getTransaction().begin();
+        if (device.size() == 0) {
+            metricDevice = this.addDevice(deviceMac, deviceModel, deviceName, deviceId);
+        } else {
+            metricDevice = (DevicesEntity) device.get(0);
+            if (!metricDevice.getMacAddress().equals("") && !deviceMac.equals("")) {
+                metricDevice.setMacAddress(deviceMac);
+            }
+        }
+        metric.setDevicesByIdDevices(metricDevice);
         session.save(metric);
+        session.flush();
+        session.getTransaction().commit();
         return metric;
     }
 
     public void linkDeviceToUser(int userId, int deviceId) {
-        session.getTransaction().begin();
+        if (!session.getTransaction().isActive()) session.getTransaction().begin();
         DevicesEntity device = session.get(DevicesEntity.class, deviceId);
         device.setOwner(session.get(UsersEntity.class, userId));
         session.update(device);

@@ -1,4 +1,4 @@
-package data.model;
+package data.model.Entity;
 
 public enum UserRoles {
     CLIENT,

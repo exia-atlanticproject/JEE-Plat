@@ -4,17 +4,17 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
-    <class name="data.model.MetricsEntity" table="Metrics" schema="atlantis">
+    <class name="data.model.Entity.MetricsEntity" table="Metrics" schema="atlantis">
         <id name="id">
             <column name="id" sql-type="int(11)"/>
         </id>
         <property name="value">
-            <column name="value" sql-type="int(11)"/>
+            <column name="value" sql-type="double(11)"/>
         </property>
         <property name="date">
-            <column name="date" sql-type="date"/>
+            <column name="date" sql-type="datetime"/>
         </property>
-        <many-to-one name="devicesByIdDevices" class="data.model.DevicesEntity">
+        <many-to-one name="devicesByIdDevices" class="data.model.Entity.DevicesEntity">
             <column name="id_Devices"/>
         </many-to-one>
     </class>

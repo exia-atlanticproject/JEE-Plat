@@ -1,5 +1,6 @@
-package data.model;
+package data.model.Entity;
 
+import data.model.Response;
 import org.json.JSONObject;
 
 import javax.persistence.*;
@@ -10,8 +11,8 @@ import java.util.Objects;
 @Table(name = "Metrics", schema = "atlantis", catalog = "")
 public class MetricsEntity implements Response {
     private int id;
-    private int value;
-    private Date date;
+    private double value;
+    private String date;
     private DevicesEntity devicesByIdDevices;
 
     @Id
@@ -27,21 +28,21 @@ public class MetricsEntity implements Response {
 
     @Basic
     @Column(name = "value", nullable = false)
-    public int getValue() {
+    public double getValue() {
         return value;
     }
 
-    public void setValue(int value) {
+    public void setValue(double value) {
         this.value = value;
     }
 
     @Basic
     @Column(name = "date", nullable = false)
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 

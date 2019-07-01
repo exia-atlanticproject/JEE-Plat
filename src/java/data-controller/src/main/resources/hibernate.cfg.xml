@@ -11,11 +11,11 @@
         <property name="connection.password">root</property>
 
         <mapping resource="DevicesEntity.hbm.xml"/>
-        <mapping class="data.model.DevicesEntity"/>
+        <mapping class="data.model.Entity.DevicesEntity"/>
         <mapping resource="MetricsEntity.hbm.xml"/>
-        <mapping class="data.model.MetricsEntity"/>
+        <mapping class="data.model.Entity.MetricsEntity"/>
         <mapping resource="UsersEntity.hbm.xml"/>
-        <mapping class="data.model.UsersEntity"/>
+        <mapping class="data.model.Entity.UsersEntity"/>
 
         <!-- DB schema will be updated if needed -->
         <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->

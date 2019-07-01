@@ -86,11 +86,16 @@ public class Connector implements MessageListener, ExceptionListener {
         emit(topic, message, null);
     }
 
-    public void emit(String topic, String message, Consumer<MessageModel> callback) throws JMSException {
+    public void respond(String callback, String source, String message) throws JMSException {
+        sendMessage(callback, source, message);
+    }
+//
+//    public void sendComputeData(String message) throws JMSException {
+//        sendMessage("calculation", "", message);
+//    }
 
-        String source = UUID.randomUUID().toString();
-
-        MessageProducer producer = session.createProducer(session.createTopic(topic));
+    private void sendMessage(String callback, String source, String message) throws JMSException {
+        MessageProducer producer = session.createProducer(session.createTopic(callback));
         producer.setDeliveryMode(DeliveryMode.PERSISTENT);
         TextMessage textMessage = session.createTextMessage();
         JSONObject json = new JSONObject(message);
@@ -98,6 +103,13 @@ public class Connector implements MessageListener, ExceptionListener {
         json.put("source", source);
         textMessage.setText(json.toString());
         producer.send(textMessage);
+    }
+
+    public void emit(String topic, String message, Consumer<MessageModel> callback) throws JMSException {
+
+        String source = UUID.randomUUID().toString();
+
+        sendMessage(topic, source, message);
         this.once(source, callback);
     }
 
@@ -115,6 +127,7 @@ public class Connector implements MessageListener, ExceptionListener {
 
     private void messageHandler(String message) {
         try {
+            logger.info("New message "+message);
             JSONObject jsonMsg = new JSONObject(message);
             Consumer<MessageModel> call = this.listeners.get(jsonMsg.getString("source"));
             if (onMessageReceived != null) onMessageReceived.accept(new MessageModel(jsonMsg.getString("source"), jsonMsg.getString("action"), jsonMsg.getString("callback"), jsonMsg.get("payload")));
@@ -123,6 +136,7 @@ public class Connector implements MessageListener, ExceptionListener {
                 this.removeListener(jsonMsg.getString("source"));
             }
         } catch (Throwable e) {
+            e.printStackTrace();
             logger.error(String.format("Malformed message: %s", message));
         }
 
@@ -137,7 +151,16 @@ public class Connector implements MessageListener, ExceptionListener {
     @Override
     public void onMessage(Message message) {
         try {
-            String text = ((TextMessage)message).getText();
+            String text = "";
+            if (message instanceof BytesMessage) {
+                BytesMessage byteMessage = (BytesMessage) message;
+                byte[] data = new byte[(int) byteMessage.getBodyLength()];
+                byteMessage.readBytes(data);
+                text = new String(data);
+            }
+            if (message instanceof TextMessage) {
+                text = ((TextMessage) message).getText();
+            }
             message.acknowledge();
             this.messageHandler(text);
         } catch (JMSException e) {
