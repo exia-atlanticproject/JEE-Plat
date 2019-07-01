@@ -86,11 +86,16 @@ public class Connector implements MessageListener, ExceptionListener {
         emit(topic, message, null);
     }
 
-    public void emit(String topic, String message, Consumer<MessageModel> callback) throws JMSException {
+    public void respond(String callback, String source, String message) throws JMSException {
+        sendMessage(callback, source, message);
+    }
+//
+//    public void sendComputeData(String message) throws JMSException {
+//        sendMessage("calculation", "", message);
+//    }
 
-        String source = UUID.randomUUID().toString();
-
-        MessageProducer producer = session.createProducer(session.createTopic(topic));
+    private void sendMessage(String callback, String source, String message) throws JMSException {
+        MessageProducer producer = session.createProducer(session.createTopic(callback));
         producer.setDeliveryMode(DeliveryMode.PERSISTENT);
         TextMessage textMessage = session.createTextMessage();
         JSONObject json = new JSONObject(message);
@@ -98,6 +103,13 @@ public class Connector implements MessageListener, ExceptionListener {
         json.put("source", source);
         textMessage.setText(json.toString());
         producer.send(textMessage);
+    }
+
+    public void emit(String topic, String message, Consumer<MessageModel> callback) throws JMSException {
+
+        String source = UUID.randomUUID().toString();
+
+        sendMessage(topic, source, message);
         this.once(source, callback);
     }
 

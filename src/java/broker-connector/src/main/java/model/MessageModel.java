@@ -1,5 +1,9 @@
 package model;
 
+import Broker.Connector;
+
+import javax.jms.JMSException;
+
 public class MessageModel {
 
     private String source;
@@ -30,12 +34,17 @@ public class MessageModel {
         return action;
     }
 
+    public void respond(Connector connector, String message) throws JMSException {
+        connector.respond(callback, source, message);
+    }
+
     @Override
     public String toString() {
         return "MessageModel{" +
                 ", payload=" + payload +
                 ", callback=" + callback +
                 ", action=" + action +
+                ", source=" + source +
                 '}';
     }
 }
