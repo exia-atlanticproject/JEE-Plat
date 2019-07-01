@@ -3,6 +3,7 @@ package data;
 import data.model.Entity.DevicesEntity;
 import data.model.Entity.MetricsEntity;
 import data.model.Entity.UsersEntity;
+import data.model.Message.LoginUserMessage;
 import org.hibernate.Session;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
@@ -67,7 +68,23 @@ public class QueryExecutor {
         return session.createQuery("from MetricsEntity metric where metric.date >= '"+start+"' and metric.date <='"+end+"'").list();
     }
 
-    public void createUser(UsersEntity user) {
+    public String login(LoginUserMessage message) {
+        Object user =  session.createQuery("from UsersEntity user where user.uid="+message.getUid()).uniqueResult();
+        if (user == null) {
+            UsersEntity newUser = new UsersEntity();
+            newUser.setEmail(message.getEmail());
+            newUser.setName(message.getName());
+            newUser.setSurname(message.getSurname());
+            newUser.setUid(message.getUid());
+            session.getTransaction().begin();
+            session.save(newUser);
+            session.flush();
+            session.getTransaction().commit();
+        }
+        return "";
+    }
+
+    private void createUser(UsersEntity user) {
         if (!session.getTransaction().isActive()) session.getTransaction().begin();
         session.save(user);
         session.getTransaction().commit();
