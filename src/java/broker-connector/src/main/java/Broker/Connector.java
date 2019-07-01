@@ -1,8 +1,7 @@
 package Broker;
 
-import Model.MessageModel;
+import model.MessageModel;
 import org.apache.activemq.ActiveMQConnectionFactory;
-import org.apache.activemq.ActiveMQSslConnectionFactory;
 import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
