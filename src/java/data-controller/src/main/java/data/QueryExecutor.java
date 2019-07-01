@@ -73,29 +73,34 @@ public class QueryExecutor {
         session.getTransaction().commit();
     }
 
-    public DevicesEntity addDevice(String deviceMac, String deviceModel, String deviceName) {
+    public DevicesEntity addDevice(String deviceMac, String deviceModel, String deviceName, String deviceUid) {
         if (!session.getTransaction().isActive()) session.getTransaction().begin();
         DevicesEntity device = new DevicesEntity();
         device.setMacAddress(deviceMac);
         device.setModel(deviceModel);
+        device.setUid(deviceUid);
+        device.setName(deviceName);
         session.save(device);
         session.flush();
         session.getTransaction().commit();
         return (DevicesEntity) session.createQuery(String.format("FROM DevicesEntity D WHERE D.macAddress = '%s'", deviceMac)).uniqueResult();
     }
 
-    public MetricsEntity addMetric(double value, String date, String deviceMac, String deviceModel, String deviceName){
+    public MetricsEntity addMetric(double value, String date, String deviceMac, String deviceModel, String deviceName, String deviceId){
         MetricsEntity metric = new MetricsEntity();
         metric.setDate(date);
         metric.setValue(value);
         DevicesEntity metricDevice;
         List device = session.createQuery("from DevicesEntity device where device.macAddress='"+deviceMac+"'").list();
+        if (!session.getTransaction().isActive()) session.getTransaction().begin();
         if (device.size() == 0) {
-            metricDevice = this.addDevice(deviceMac, deviceModel, deviceName);
+            metricDevice = this.addDevice(deviceMac, deviceModel, deviceName, deviceId);
         } else {
             metricDevice = (DevicesEntity) device.get(0);
+            if (!metricDevice.getMacAddress().equals("") && !deviceMac.equals("")) {
+                metricDevice.setMacAddress(deviceMac);
+            }
         }
-        if (!session.getTransaction().isActive()) session.getTransaction().begin();
         metric.setDevicesByIdDevices(metricDevice);
         session.save(metric);
         session.flush();
