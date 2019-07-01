@@ -1,16 +1,28 @@
 package data;
 
-import java.util.HashMap;
-import java.util.Map;
+import Broker.Connector;
+import Model.MessageModel;
 
+import javax.jms.JMSException;
 
 public class QueryRouter {
 
-    public QueryRouter() {
+    private Connector brokerconnector = Connector.getInstance();
+
+    public QueryRouter() throws Exception {
+        brokerconnector.connect("tcp://localhost:61616");
+        brokerconnector.setOnMessageReceived(this::dispatch);
     }
 
-    public String dispatch(String action) {
-        Map<String, String> params = new HashMap<>();
-        return Routes.findRoute(action).execQuery(params);
+    void dispatch(MessageModel message) {
+        //TODO transform Object payload into map
+        String result = Routes.findRoute(message.getAction()).execQuery(null);
+        if (!message.getCallback().equals("")) {
+            try {
+                brokerconnector.emit(message.getCallback(), result);
+            } catch (JMSException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }

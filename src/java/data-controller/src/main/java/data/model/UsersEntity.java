@@ -3,11 +3,12 @@ package data.model;
 import org.json.JSONObject;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
 @Table(name = "Users", schema = "atlantis")
-public class UsersEntity implements Response {
+public class UsersEntity implements Response, Serializable {
     private int id;
     private String name;
     private String surname;
@@ -56,7 +57,7 @@ public class UsersEntity implements Response {
     }
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "role", nullable = false)
+    @Column(name = "role")
     public UserRoles getRole() {
         return role;
     }

@@ -4,11 +4,9 @@ import data.model.DevicesEntity;
 import data.model.MetricsEntity;
 import data.model.UsersEntity;
 import org.hibernate.Session;
-import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -24,7 +22,7 @@ public class QueryExecutor {
         return instance;
     }
 
-    public List getDevices() {
+    public List<DevicesEntity> getDevices() {
         Query query = session.createQuery("from DevicesEntity");
         return query.list();
     }
@@ -51,16 +49,18 @@ public class QueryExecutor {
         return session.get(UsersEntity.class, email);
     }
 
-    public List<MetricsEntity> getMetrics(int deviceId) {
-        return this.getMetrics(deviceId, null);
+    public List getMetrics(int deviceId) {
+        return session.createQuery("from MetricsEntity metric ").list();
+
     }
 
-    public List<MetricsEntity> getMetrics(int deviceId, Date start) {
-        return this.getMetrics(deviceId, start, null);
+    public List getMetrics(int deviceId, Date start) {
+        return session.createQuery("from MetricsEntity metric where metric.date >= '"+start+"'").list();
+
     }
 
-    public List<MetricsEntity> getMetrics(int deviceId, Date start, Date end) {
-        return null;
+    public List getMetrics(int deviceId, Date start, Date end) {
+        return session.createQuery("from MetricsEntity metric where metric.date >= '"+start+"' and metric.date <='"+end+"'").list();
     }
 
     public void createUser(UsersEntity user) {
@@ -75,6 +75,7 @@ public class QueryExecutor {
         device.setMacAddress(mac);
         device.setModel(model);
         session.save(device);
+        session.flush();
         session.getTransaction().commit();
         return (DevicesEntity) session.createQuery(String.format("FROM DevicesEntity D WHERE D.macAddress = '%s'", mac)).uniqueResult();
     }
