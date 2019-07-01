@@ -1,7 +1,7 @@
 package data;
 
 import Broker.Connector;
-import Model.MessageModel;
+import model.MessageModel;
 
 import javax.jms.JMSException;
 
@@ -10,7 +10,7 @@ public class QueryRouter {
     private Connector brokerconnector = Connector.getInstance();
 
     public QueryRouter() throws Exception {
-        brokerconnector.connect("tcp://localhost:61616");
+        brokerconnector.connect("tcp://localhost:61616", "Data-Controller");
         brokerconnector.setOnMessageReceived(this::dispatch);
     }
 

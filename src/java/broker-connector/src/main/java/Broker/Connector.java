@@ -44,6 +44,12 @@ public class Connector implements MessageListener, ExceptionListener {
         this.init(url);
     }
 
+    public void connect(String url, String name) throws Exception {
+        this.id = name;
+        this.init(url);
+    }
+
+
     private void init(String url) throws Exception {
         listeners = new HashMap<>();
         logger.info("Connection...");
