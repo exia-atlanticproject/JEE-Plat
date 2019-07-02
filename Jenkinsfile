@@ -1,18 +1,14 @@
 pipeline {
   agent {
-    dockerfile {
-      filename 'Dockerfile'
-      label 'test'
-    }
+    label 'master'
   }
   }
   stages {
     stage('Build') {
       steps {
         dir(path: 'src') {
-          sh 'mvn compiler:compile'
+          sh 'docker info'
         }
-
       }
     }
     stage('Test') {
