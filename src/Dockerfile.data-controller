@@ -5,23 +5,17 @@ ARG target=api-phone
 WORKDIR /usr/src/app
 
 COPY pom.xml .
-#RUN mvn -B -e -C -T 1C org.apache.maven.plugins:maven-dependency-plugin:3.0.2:go-offline
 COPY . .
 
 RUN rm ./java/api-phone/pom.xml
 RUN mv ./java/api-phone/pom.ci.xml ./java/api-phone/pom.xml
 RUN cd ./java/data-controller
-RUN mvn clean install
+RUN mvn clean compile resources:resources assembly:single -pl java/data-controller -am
 
 FROM openjdk:8
 
-COPY --from=build /usr/src/app /var/lib/production
+COPY --from=build /usr/src/app/java/data-controller/target/data-controller-1.0.0-jar-with-dependencies.jar /var/lib/production/data-controller.jar
 
-WORKDIR /var/lib/production/java/data-controller/src/main/java/io/controller/
+WORKDIR /var/lib/production
 
-RUN javac main.java
-
-CMD ["java", "main"]
-#CMD "bash -c 'java -jar /var/lib/production/java/data-controller/target/data-controller-1.0.0.jar'"
-
-#EXPOSE 8080
+CMD ["java", "-jar", "data-controller.jar"]

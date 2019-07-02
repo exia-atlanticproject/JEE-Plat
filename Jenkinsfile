@@ -11,7 +11,7 @@ pipeline {
           sh 'docker tag jee-platform:latest jdieuze/jee-platform:latest'
           sh 'docker push jdieuze/jee-platform:latest'
           
-          sh 'docker build --build-arg target=data-controller --no-cache -t data-controller .'
+          sh 'docker build --build-arg target=data-controller --no-cache -t data-controller -f Dockerfile.data-controller .'
           sh 'docker tag data-controller:latest jdieuze/data-controller:latest'
           sh 'docker push jdieuze/data-controller:latest'
         }
