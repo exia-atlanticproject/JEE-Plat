@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        ws(dir: 'src')
+        dir(path: 'src')
         sh 'mvn compiler:compile'
       }
     }
