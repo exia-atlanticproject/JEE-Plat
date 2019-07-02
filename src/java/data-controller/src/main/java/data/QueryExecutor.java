@@ -2,6 +2,7 @@ package data;
 
 import data.model.Entity.DevicesEntity;
 import data.model.Entity.MetricsEntity;
+import data.model.Entity.UserRoles;
 import data.model.Entity.UsersEntity;
 import data.model.Message.LoginUserMessage;
 import org.hibernate.Session;
@@ -69,13 +70,14 @@ public class QueryExecutor {
     }
 
     public String login(LoginUserMessage message) {
-        Object user =  session.createQuery("from UsersEntity user where user.uid="+message.getUid()).uniqueResult();
+        Object user =  session.createQuery("from UsersEntity user where user.uid='"+message.getUid()+"'").uniqueResult();
         if (user == null) {
             UsersEntity newUser = new UsersEntity();
             newUser.setEmail(message.getEmail());
             newUser.setName(message.getName());
             newUser.setSurname(message.getSurname());
             newUser.setUid(message.getUid());
+            newUser.setRole(UserRoles.CLIENT);
             session.getTransaction().begin();
             session.save(newUser);
             session.flush();
