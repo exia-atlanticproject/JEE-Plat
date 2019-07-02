@@ -7,7 +7,8 @@ public class BrokerConnector {
 
     private static Connector connector;
     public static final String DataController = "Data-Controller";
-    public static final String Calculation = "Calculationr";
+    public static final String Calculation = "Calculation";
+    public static final String Command = "command";
 
     static {
         try {

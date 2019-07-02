@@ -88,44 +88,23 @@ public class DeviceResource {
     }
 
     @POST
-    @Path("/command/{idDevice}")
+    @Path("/command/{idCommand}/device/{idDevice}")
     @ApiOperation(value = "Send a command to a device", response = String.class)
     @Consumes(MediaType.APPLICATION_JSON)
-    public void sendCommand(
-//            @ApiParam(value = "Device id", required = true)@PathParam("idDevice") Long idDevice
-            @Suspended final AsyncResponse ar
+    public Response sendCommand(
+            @ApiParam(value = "Device id", required = true)@PathParam("idCommand") Long idCommand,
+            @ApiParam(value = "Device id", required = true)@PathParam("idDevice") Long idDevice
     ) {
-        new Thread(new Runnable() {
-            public void run() {
-                try {
-                    Thread.sleep(2000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                ar.resume(Response.ok().entity("coucou").build());
-            }
-        }).start();
 
-//        final AsyncResponse ar = suspended.take();
-//        ar.resume("lol"); // resumes the processing of one GET request
-//        return "Message sent";
-//
-//        JSONObject command = new JSONObject();
-//        command.put("idDevice", idDevice);
-//        command.put("idCommand", 1);
-//
-//        try {
-//            connector.emit("Data-Controller", command.toString(), new Consumer<MessageModel>() {
-//                @Override
-//                public void accept(MessageModel messageModel) {
-//                    System.out.println("coucou");
-//                }
-//            });
-////            return Response.ok().entity("Command successfully sent").build();
-//        } catch (JMSException e) {
-//            e.printStackTrace();
-////            return Response.status(500).entity("Error").build();
-//        }
-//        return Response.ok().build();
+        String message = BrokerConnector.createMessage("Command",
+                new JSONObject().put("idDevice", idDevice ).put("idCommand", idCommand));
+        try {
+            BrokerConnector.getConnector().emit(BrokerConnector.Command, message);
+            return Response.ok().entity("command sent").build();
+        } catch (JMSException e) {
+            e.printStackTrace();
+            return Response.status(500).build();
+        }
+
     }
 }
