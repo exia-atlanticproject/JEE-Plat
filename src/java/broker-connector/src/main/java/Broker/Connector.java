@@ -1,7 +1,6 @@
 package Broker;
 
 import model.MessageModel;
-import netscape.javascript.JSException;
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.json.JSONObject;
 import org.slf4j.Logger;

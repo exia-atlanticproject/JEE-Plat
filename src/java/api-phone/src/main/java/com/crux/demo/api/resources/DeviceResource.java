@@ -1,12 +1,9 @@
 package com.crux.demo.api.resources;
 
-import Broker.Connector;
-import com.crux.demo.api.model.Device;
 import com.crux.demo.api.util.BrokerConnector;
 import com.wordnik.swagger.annotations.Api;
 import com.wordnik.swagger.annotations.ApiOperation;
 import com.wordnik.swagger.annotations.ApiParam;
-import org.json.JSONArray;
 import org.json.JSONObject;
 
 import javax.jms.JMSException;

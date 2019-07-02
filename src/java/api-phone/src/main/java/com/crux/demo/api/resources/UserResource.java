@@ -54,8 +54,6 @@ public class UserResource {
             e.printStackTrace();
             ar.resume(Response.status(500).build());
         }
-
-        return Response.ok().entity(User.getUsers()).build();
     }
 
 
