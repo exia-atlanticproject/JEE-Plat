@@ -139,6 +139,7 @@ public class Connector implements MessageListener, ExceptionListener {
             e.printStackTrace();
             logger.error(String.format("Malformed message: %s", message));
             try {
+                if (jsonMsg.getString("callback").equals("")) return;
                 connector.respond(jsonMsg.getString("callback"), jsonMsg.getString("source"), "{\"action\": \"reply\", \"payload\": {\"res\": \"error\"}}");
             } catch (JMSException ex) {
                 ex.printStackTrace();

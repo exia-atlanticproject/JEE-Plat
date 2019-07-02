@@ -8,7 +8,7 @@ import java.sql.Date;
 import java.util.Objects;
 
 @Entity
-@Table(name = "Metrics", schema = "atlantis", catalog = "")
+@Table(name = "Metrics", schema = "atlantis")
 public class MetricsEntity implements Response {
     private int id;
     private double value;
@@ -16,8 +16,8 @@ public class MetricsEntity implements Response {
     private DevicesEntity devicesByIdDevices;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id", nullable = false, unique = true, updatable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id", nullable = false, updatable = false)
     public int getId() {
         return id;
     }

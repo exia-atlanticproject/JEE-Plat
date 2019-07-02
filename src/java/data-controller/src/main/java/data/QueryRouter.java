@@ -21,17 +21,22 @@ public class QueryRouter {
 
     void dispatch(MessageModel message) {
         logger.info(String.format("New message %s %s %s", message.getAction(), message.getCallback(), message.getSource()));
-        Object result = Routes.findRoute(message.getAction()).execQuery(message.getPayload());
-        System.out.println("");
+        System.out.println("dispatch");
+        Routes route = Routes.findRoute(message.getAction());
+        System.out.println("route founded");
+        Object result = route.execQuery(message.getPayload());
+        System.out.println("after result");
         JSONObject res = new JSONObject();
-        if (result == null) {
-            res.put("payload", "");
-        } else {
+        if (result != null) {
             if (result instanceof JSONObject) {
                 res.put("payload", (JSONObject)result);
-            } else {
+            } else if (result instanceof JSONArray){
                 res.put("payload", (JSONArray) result);
+            } else {
+                res.put("payload", "");
             }
+        } else {
+            res.put("payload", "");
         }
         res.put("action", "reply");
         if (!message.getCallback().equals("")) {

@@ -6,67 +6,82 @@ import data.model.Entity.UserRoles;
 import data.model.Entity.UsersEntity;
 import data.model.Message.LoginUserMessage;
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
+import org.json.JSONArray;
 
-import java.util.Date;
+import java.util.Collection;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class QueryExecutor {
     private Session session;
+    private SessionFactory factory;
     private static QueryExecutor instance = new QueryExecutor();
 
     private QueryExecutor() {
         session = new Configuration().configure().buildSessionFactory().openSession();
+        factory = new Configuration().configure().buildSessionFactory();
     }
 
     public static QueryExecutor getInstance(){
         return instance;
     }
 
-    public List<DevicesEntity> getDevices() {
+    public String getDevices() {
         Query query = session.createQuery("from DevicesEntity");
-        return query.list();
+        return "["+query.list().stream().map(device -> ((DevicesEntity)device).toJsonString()).collect(Collectors.joining(", "))+"]";
     }
 
-    public List<DevicesEntity> getUserDevices(int userId) {
+    public String getUserDevices(int userId) {
         Query query = session.createQuery("from DevicesEntity device where device.owner.id="+userId);
-        return query.list();
+        return "["+query.list().stream().map(device -> ((DevicesEntity)device).toJsonString()).collect(Collectors.joining(", "))+"]";
     }
 
-    public DevicesEntity getDevice(int id) {
-        return session.get(DevicesEntity.class, id);
+    public String getDevice(int id) {
+        DevicesEntity device = session.get(DevicesEntity.class, id);
+        return device.toJsonString();
     }
 
-    public List<UsersEntity> getUsers() {
+    public String getUsers() {
         Query query = session.createQuery("from UsersEntity");
-        return query.list();
+        return "["+query.list().stream().map(device -> ((UsersEntity)device).toJsonString()).collect(Collectors.joining(", "))+"]";
     }
 
-    public UsersEntity getUser(int id) {
-        return session.get(UsersEntity.class, id);
+    public String getUser(int id) {
+        UsersEntity user = session.get(UsersEntity.class, id);
+        return user.toJsonString();
     }
 
-    public UsersEntity getUser(String uid) {
-        return (UsersEntity) session.createQuery("from UsersEntity user where user.uid='"+uid+"'").list().get(0);
+    public String getUser(String uid) {
+        UsersEntity user = (UsersEntity) session.createQuery("from UsersEntity user where user.uid='"+uid+"'").uniqueResult();
+        return user.toJsonString();
     }
 
-    public List getMetrics(int deviceId) {
-        return session.createQuery("from MetricsEntity metric where metric.devicesByIdDevices="+deviceId).list();
+    public String getMetrics(int deviceId) {
+        List list = session.createQuery("from MetricsEntity metric where metric.devicesByIdDevices="+deviceId).list();
+        return "["+list.stream().map(device -> ((MetricsEntity)device).toJsonString()).collect(Collectors.joining(", "))+"]";
+
 
     }
 
-    public List getMetrics(int deviceId, String start) {
-        return session.createQuery("from MetricsEntity metric where metric.date >= '"+start+"' and metric.devicesByIdDevices="+deviceId).list();
+    public String getMetrics(int deviceId, String start) {
+        List list = session.createQuery("from MetricsEntity metric where metric.date >= '"+start+"' and metric.devicesByIdDevices="+deviceId).list();
+        return "["+list.stream().map(device -> ((MetricsEntity)device).toJsonString()).collect(Collectors.joining(", "))+"]";
+
 
     }
 
-    public List<MetricsEntity> getMetrics(int deviceId, String start, String end) {
-        return session.createQuery("from MetricsEntity metric where metric.date >= '"+start+"' and metric.date <='"+end+"' and metric.devicesByIdDevices="+deviceId).list();
+    public String getMetrics(int deviceId, String start, String end) {
+        List list = session.createQuery("from MetricsEntity metric where metric.date >= '"+start+"' and metric.date <='"+end+"' and metric.devicesByIdDevices="+deviceId).list();
+        return "["+list.stream().map(device -> ((MetricsEntity)device).toJsonString()).collect(Collectors.joining(", "))+"]";
     }
 
-    public List<MetricsEntity> getMetrics(String start, String end) {
-        return session.createQuery("from MetricsEntity metric where metric.date >= '"+start+"' and metric.date <='"+end+"'").list();
+    public String getMetrics(String start, String end) {
+        List list = session.createQuery("from MetricsEntity metric where metric.date >= '"+start+"' and metric.date <='"+end+"'").list();
+        return "["+list.stream().map(device -> ((MetricsEntity)device).toJsonString()).collect(Collectors.joining(", "))+"]";
     }
 
     public String login(LoginUserMessage message) {
@@ -92,48 +107,47 @@ public class QueryExecutor {
         session.getTransaction().commit();
     }
 
-    public DevicesEntity addDevice(String deviceMac, String deviceModel, String deviceName, String deviceUid) {
-        if (!session.getTransaction().isActive()) session.getTransaction().begin();
+    public DevicesEntity addDevice(String deviceMac, String deviceModel, String deviceName, String deviceUid, Session sess) {
         DevicesEntity device = new DevicesEntity();
         device.setMacAddress(deviceMac);
         device.setModel(deviceModel);
         device.setUid(deviceUid);
         device.setName(deviceName);
-        session.save(device);
-        session.flush();
-        session.getTransaction().commit();
-        return (DevicesEntity) session.createQuery(String.format("FROM DevicesEntity D WHERE D.macAddress = '%s'", deviceMac)).uniqueResult();
+        sess.save(device);
+        sess.flush();
+//        sess.getTransaction().commit();
+//        sess.clear();
+        return (DevicesEntity) sess.createQuery(String.format("FROM DevicesEntity D WHERE D.macAddress = '%s'", deviceMac)).uniqueResult();
     }
 
-    public MetricsEntity addMetric(double value, String date, String deviceMac, String deviceModel, String deviceName, String deviceId){
+    public MetricsEntity addMetric(double value, String date, String deviceMac, String deviceModel, String deviceName, String deviceId, Session sess){
         MetricsEntity metric = new MetricsEntity();
         metric.setDate(date);
         metric.setValue(value);
-        DevicesEntity metricDevice;
-        List device = session.createQuery("from DevicesEntity device where device.macAddress='"+deviceMac+"'").list();
-        if (!session.getTransaction().isActive()) session.getTransaction().begin();
-        if (device.size() == 0) {
-            metricDevice = this.addDevice(deviceMac, deviceModel, deviceName, deviceId);
+        DevicesEntity metricDevice = (DevicesEntity) sess.createQuery("from DevicesEntity device where device.uid='"+deviceId+"'").uniqueResult();
+        if (metricDevice == null) {
+            metricDevice = this.addDevice(deviceMac, deviceModel, deviceName, deviceId, sess);
         } else {
-            metricDevice = (DevicesEntity) device.get(0);
             if (!metricDevice.getMacAddress().equals("") && !deviceMac.equals("")) {
                 metricDevice.setMacAddress(deviceMac);
             }
         }
         metric.setDevicesByIdDevices(metricDevice);
-        session.save(metric);
-        session.flush();
-        session.getTransaction().commit();
+        sess.save(metric);
+        sess.flush();
+        sess.clear();
         return metric;
     }
 
-    public void linkDeviceToUser(int userId, int deviceId) {
-        if (!session.getTransaction().isActive()) session.getTransaction().begin();
-        DevicesEntity device = session.get(DevicesEntity.class, deviceId);
-        device.setOwner(session.get(UsersEntity.class, userId));
-        session.update(device);
-        session.flush();
-        session.getTransaction().commit();
+    public void linkDeviceToUser(int userId, int deviceId, Session sess) {
+        Transaction transaction = sess.getTransaction();
+        transaction.begin();
+        DevicesEntity device = sess.get(DevicesEntity.class, deviceId);
+        device.setOwner(sess.get(UsersEntity.class, userId));
+        sess.update(device);
+        sess.flush();
+        sess.clear();
+        transaction.commit();
     }
 
     public void close() {
