@@ -1,8 +1,3 @@
-<<<<<<< Updated upstream:src/java/data-controller/src/main/java/io/controller/main.java
-package io.controller;
-
-=======
->>>>>>> Stashed changes:src/java/data-controller/src/main/java/main.java
 import data.QueryRouter;
 
 import java.util.logging.Level;
