@@ -2,13 +2,13 @@ pipeline {
   agent {
     label 'master'
   }
-  }
   stages {
     stage('Build') {
       steps {
         dir(path: 'src') {
           sh 'docker info'
         }
+
       }
     }
     stage('Test') {
