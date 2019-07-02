@@ -1,16 +1,15 @@
 pipeline {
   agent {
-    dockerfile {
-      filename 'Dockerfile'
-      label 'test'
-    }
-  }
+    label 'master'
   }
   stages {
     stage('Build') {
       steps {
         dir(path: 'src') {
-          sh 'mvn compiler:compile'
+          sh 'docker login -u jdieuze -p $DOCKER_PASSWORD'
+          sh 'docker build --no-cache -t jee-platform .'
+          sh 'docker tag jdieuze/jee-platform:latest'
+          sh 'docker push jdieuze/jee-platform:latest'
         }
 
       }
