@@ -25,17 +25,6 @@ public class QueryRouter {
         Object result = route.execQuery(message.getPayload());
         JSONObject res = new JSONObject();
         if (result == null) {res.put("payload", "");} else {res.put("payload", result);}
-//        if (result != null) {
-//            if (result instanceof JSONObject) {
-//                res.put("payload", (JSONObject)result);
-//            } else if (result instanceof JSONArray){
-//                res.put("payload", (JSONArray) result);
-//            } else {
-//                res.put("payload", "");
-//            }
-//        } else {
-//            res.put("payload", "");
-//        }
         res.put("action", "reply");
         if (!message.getCallback().equals("")) {
             try {
