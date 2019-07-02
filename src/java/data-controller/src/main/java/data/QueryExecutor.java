@@ -132,6 +132,7 @@ public class QueryExecutor {
         DevicesEntity device = session.get(DevicesEntity.class, deviceId);
         device.setOwner(session.get(UsersEntity.class, userId));
         session.update(device);
+        session.flush();
         session.getTransaction().commit();
     }
 

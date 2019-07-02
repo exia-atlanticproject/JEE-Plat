@@ -1,7 +1,7 @@
 package com.crux.demo.api.resources;
 
 import com.crux.demo.api.exception.NotFoundException;
-import com.crux.demo.model.User;
+import com.crux.demo.api.model.User;
 import com.wordnik.swagger.annotations.Api;
 import com.wordnik.swagger.annotations.ApiOperation;
 import org.apache.log4j.Logger;
@@ -43,7 +43,7 @@ public class UserResource {
 
         log.info("Retrieving all users...");
 
-        return Response.ok().entity(User.getUsers()).build();
+        return Response.ok().build();
     }
 
 
@@ -62,12 +62,6 @@ public class UserResource {
     public Response getUserById(@PathParam("userId") String userId) throws NotFoundException {
 
         log.info("Retrieving user '" + userId + "'...");
-
-        User user = User.getUserById(userId);
-
-        if(user != null) {
-            return Response.ok().entity(user).build();
-        }
 
         throw new NotFoundException(404, "User '" + userId + "' not found.");
     }
