@@ -28,6 +28,7 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Context;
+import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 import java.io.IOException;
@@ -91,6 +92,7 @@ public class AuthResource {
     @Path("/auth")
     @ApiOperation(value = "Get user by user name",
             response = User.class)
+    @Produces(MediaType.TEXT_PLAIN)
     public Response auth() {
         String auth = authorization
                 + "&client_id=" + clientId

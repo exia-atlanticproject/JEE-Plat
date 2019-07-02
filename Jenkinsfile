@@ -1,11 +1,16 @@
 pipeline {
-  agent any
+  agent {
+    dockerfile {
+      filename 'Dockerfile'
+      label 'test'
+    }
+  }
   }
   stages {
     stage('Build') {
       steps {
         dir(path: 'src') {
-          Execute Docker info
+          sh 'mvn compiler:compile'
         }
 
       }
