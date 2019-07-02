@@ -52,7 +52,7 @@ public class DevicesEntity implements Response {
     @Basic
     @Column(name = "name", length = 200, unique = true)
     public String getName() {
-        return uid;
+        return name;
     }
 
     public void setName(String name) {
@@ -89,7 +89,7 @@ public class DevicesEntity implements Response {
         return String.format(" %d %s %s", this.id, this.macAddress, this.model);
     }
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_Users", referencedColumnName = "id", nullable = false)
     public UsersEntity getOwner() {
         return owner;
