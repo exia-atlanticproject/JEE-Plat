@@ -2,14 +2,19 @@ package com.crux.demo.api.resources;
 
 import com.crux.demo.api.exception.NotFoundException;
 import com.crux.demo.api.model.User;
+import com.crux.demo.api.util.BrokerConnector;
 import com.wordnik.swagger.annotations.Api;
 import com.wordnik.swagger.annotations.ApiOperation;
 import org.apache.log4j.Logger;
+import org.json.JSONObject;
 
+import javax.jms.JMSException;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.container.AsyncResponse;
+import javax.ws.rs.container.Suspended;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
@@ -35,15 +40,22 @@ public class UserResource {
      * @throws Exception
      */
     @GET
-    @ApiOperation(
-            value = "Get all users",
-            notes = "Retrieves a complete list of users from the system. WARNING: This can be a very lengthy process and transfers a great deal of data over the wire.",
-            response = User.class)
-    public Response getAllUsers() throws Exception {
+    @Path("/")
+    @ApiOperation(value = "Retrieve users", response = String.class)
+    @Produces(MediaType.APPLICATION_JSON)
+    public void getUsers(final @Suspended AsyncResponse ar) {
 
-        log.info("Retrieving all users...");
+        String message = BrokerConnector.createMessage("GetUsers", new JSONObject());
+        try {
+            BrokerConnector.getConnector().emit(BrokerConnector.DataController, message, m -> {
+                ar.resume(Response.ok().entity(m.getPayload().toString()).build());
+            });
+        } catch (JMSException e) {
+            e.printStackTrace();
+            ar.resume(Response.status(500).build());
+        }
 
-        return Response.ok().build();
+        return Response.ok().entity(User.getUsers()).build();
     }
 
 

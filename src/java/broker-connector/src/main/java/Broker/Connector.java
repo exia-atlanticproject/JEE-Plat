@@ -1,6 +1,7 @@
 package Broker;
 
 import model.MessageModel;
+import netscape.javascript.JSException;
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.json.JSONObject;
 import org.slf4j.Logger;
@@ -169,6 +170,7 @@ public class Connector implements MessageListener, ExceptionListener {
             message.acknowledge();
             this.messageHandler(text);
         } catch (JMSException e) {
+//            this.messageHandler();
             e.printStackTrace();
         }
     }
