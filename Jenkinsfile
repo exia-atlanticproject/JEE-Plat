@@ -1,15 +1,11 @@
 pipeline {
-  agent {
-    docker {
-      image 'maven:3.6.1-jdk-8'
-    }
-
+  agent any
   }
   stages {
     stage('Build') {
       steps {
         dir(path: 'src') {
-          sh 'mvn compiler:compile'
+          Execute Docker info
         }
 
       }

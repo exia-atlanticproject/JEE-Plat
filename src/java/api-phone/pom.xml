@@ -154,6 +154,7 @@
 
 
         <!--  Internal project dependencies -->
+        <!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
         <dependency>
             <groupId>com.crux.demo</groupId>
             <artifactId>model</artifactId>
