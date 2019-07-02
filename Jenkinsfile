@@ -8,8 +8,10 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        dir(path: 'src')
-        sh 'mvn compiler:compile'
+        dir(path: 'src') {
+          sh 'mvn compiler:compile'
+        }
+
       }
     }
     stage('Test') {
