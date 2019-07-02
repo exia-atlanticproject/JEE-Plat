@@ -52,7 +52,7 @@
 
                     -->
                   <pendingMessageLimitStrategy>
-                    <constantPendingMessageLimitStrategy limit="50"/>
+                    <constantPendingMessageLimitStrategy limit="-1"/>
                   </pendingMessageLimitStrategy>
                 </policyEntry>
               </policyEntries>

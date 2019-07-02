@@ -63,15 +63,16 @@ public class QueryExecutor {
     public String getMetrics(int deviceId) {
         List list = session.createQuery("from MetricsEntity metric where metric.devicesByIdDevices="+deviceId).list();
         return "["+list.stream().map(device -> ((MetricsEntity)device).toJsonString()).collect(Collectors.joining(", "))+"]";
+    }
 
-
+    public String getLastMetric(int deviceId) {
+        List list = session.createQuery("from MetricsEntity metric where metric.devicesByIdDevices="+deviceId+" order by metric.date ASC limit 1").list();
+        return "["+list.stream().map(device -> ((MetricsEntity)device).toJsonString()).collect(Collectors.joining(", "))+"]";
     }
 
     public String getMetrics(int deviceId, String start) {
         List list = session.createQuery("from MetricsEntity metric where metric.date >= '"+start+"' and metric.devicesByIdDevices="+deviceId).list();
         return "["+list.stream().map(device -> ((MetricsEntity)device).toJsonString()).collect(Collectors.joining(", "))+"]";
-
-
     }
 
     public String getMetrics(int deviceId, String start, String end) {

@@ -53,7 +53,7 @@ public class AddMetricMessage {
         JSONObject jsonObject = (JSONObject)payload;
         SimpleDateFormat parser = new SimpleDateFormat("MM/dd/yy HH:mm:ss");
 //        SimpleDateFormat parser = new SimpleDateFormat("MM/dd/yy HH:mm:ss a");
-        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         try {
             Date date = parser.parse(jsonObject.getString("metricDate"));
             return new AddMetricMessage(

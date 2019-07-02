@@ -1,23 +1,13 @@
 package data;
 
-import Broker.Connector;
-import data.model.Entity.DevicesEntity;
-import data.model.Entity.MetricsEntity;
-import data.model.Entity.UsersEntity;
 import data.model.Message.*;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-import org.json.JSONArray;
-import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.Arrays;
-import java.util.List;
 import java.util.function.Function;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public enum Routes {
     GET_DEVICES("GetDevices", params -> {
@@ -30,6 +20,7 @@ public enum Routes {
         return QueryExecutor.getInstance().getUserDevices(GetterWithIdMessage.parse(payload).getObjectId());
     }),
     GET_DEVICE("GetDevice", payload -> QueryExecutor.getInstance().getDevice(GetterWithIdMessage.parse(payload).getObjectId())),
+    GET_LAST_METRIC("GetLastDeviceMetric", payload -> QueryExecutor.getInstance().getLastMetric(GetterWithIdMessage.parse(payload).getObjectId())),
     GET_USER("GetUser", payload -> QueryExecutor.getInstance().getUser(GetterUserWithUidMessage.parse(payload).getUid())),
     GET_DEVEICE_METRICS("GetDeviceMetrics", payload -> {
         GetterMetricsMessage params = GetterMetricsMessage.parse(payload);
@@ -45,7 +36,6 @@ public enum Routes {
         session.getTransaction().begin();
         AddMetricMessage params = AddMetricMessage.parse(payload);
         log(params.toString());
-        System.out.println(params);
         QueryExecutor.getInstance().addMetric(params.getMetricValue(), params.getMetricDate(), params.getMacAddress(), params.getDeviceType(), params.getDeviceName(), params.getDeviceId(), session);
         session.getTransaction().commit();
         return null;
