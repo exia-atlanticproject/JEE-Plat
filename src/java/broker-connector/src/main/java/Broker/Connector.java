@@ -170,6 +170,7 @@ public class Connector implements MessageListener, ExceptionListener {
             message.acknowledge();
             this.messageHandler(text);
         } catch (JMSException e) {
+//            this.messageHandler();
             e.printStackTrace();
         }
     }

@@ -1,13 +1,9 @@
 package com.crux.demo.api.listeners;
 
-import com.crux.demo.api.model.User;
 import com.wordnik.swagger.models.Contact;
 import com.wordnik.swagger.models.Info;
 import com.wordnik.swagger.models.License;
 import com.wordnik.swagger.models.Swagger;
-import com.wordnik.swagger.models.auth.ApiKeyAuthDefinition;
-import com.wordnik.swagger.models.auth.In;
-import com.wordnik.swagger.models.auth.OAuth2Definition;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletContext;
@@ -48,6 +44,16 @@ public class Bootstrapper implements ServletContextListener {
      */
     private void buildMockData() throws Exception {
         log.info("Building in-memory database...");
+
+//        // Build a fake user and add them to the in-memory database of users.
+//        User fakeUser = new User("Aaron", "Stone", "aaron.stone@effectiveui.com");
+//        User.addUser(fakeUser);
+//
+//        fakeUser = new User("Zach", "Hendershot", "zach.hendershot@effectiveui.com");
+//        User.addUser(fakeUser);
+//
+//        fakeUser = new User("Nathan", "Ameye", "nathan.ameye@effectiveui.com");
+//        User.addUser(fakeUser);
 
         log.info("Successfully loaded mock data.");
     }
