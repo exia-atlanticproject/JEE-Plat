@@ -2,6 +2,8 @@ package data;
 
 import Broker.Connector;
 import model.MessageModel;
+import org.json.JSONArray;
+import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,10 +21,22 @@ public class QueryRouter {
 
     void dispatch(MessageModel message) {
         logger.info(String.format("New message %s %s %s", message.getAction(), message.getCallback(), message.getSource()));
-        String result = Routes.findRoute(message.getAction()).execQuery(message.getPayload());
+        Object result = Routes.findRoute(message.getAction()).execQuery(message.getPayload());
+        System.out.println("");
+        JSONObject res = new JSONObject();
+        if (result == null) {
+            res.put("payload", "");
+        } else {
+            if (result instanceof JSONObject) {
+                res.put("payload", (JSONObject)result);
+            } else {
+                res.put("payload", (JSONArray) result);
+            }
+        }
+        res.put("action", "reply");
         if (!message.getCallback().equals("")) {
             try {
-                message.respond(brokerconnector, result);
+                message.respond(brokerconnector, res.toString());
             } catch (JMSException e) {
                 e.printStackTrace();
             }

@@ -15,62 +15,55 @@ import java.util.stream.Collectors;
 
 public enum Routes {
     GET_DEVICES("GetDevices", params -> {
-        List list = QueryExecutor.getInstance().getDevices().stream()
-                .map(DevicesEntity::toJsonString).collect(Collectors.toList());
-        return new JSONArray(list).toString();
+        return new JSONArray(QueryExecutor.getInstance().getDevices());
     }),
     GET_USERS("GetUsers", params -> {
-        List list = QueryExecutor.getInstance().getUsers().stream()
-                .map(UsersEntity::toJsonString).collect(Collectors.toList());
-        return new JSONArray(list).toString();
+        return new JSONArray(QueryExecutor.getInstance().getUsers());
     }),
     GET_USER_DEVICES("GetUserDevices", payload -> {
-        List list = QueryExecutor.getInstance().getUserDevices(GetterWithIdMessage.parse(payload).getObjectId()).stream().map(DevicesEntity::toJsonString).collect(Collectors.toList());
-        return new JSONArray(list).toString();
+        return new JSONArray(QueryExecutor.getInstance().getUserDevices(GetterWithIdMessage.parse(payload).getObjectId()));
     }),
     GET_DEVICE("GetDevice", payload -> QueryExecutor.getInstance().getDevice(GetterWithIdMessage.parse(payload).getObjectId()).toJsonString()),
     GET_USER("GetUser", payload -> QueryExecutor.getInstance().getUser(GetterUserWithUidMessage.parse(payload).getUid()).toJsonString()),
     GET_DEVEICE_METRICS("GetDeviceMetrics", payload -> {
         GetterMetricsMessage params = GetterMetricsMessage.parse(payload);
         log(params.toString());
-        List list = QueryExecutor.getInstance().getMetrics(params.getDeviceId(), params.getStart(), params.getEnd()).stream().map(MetricsEntity::toJsonString).collect(Collectors.toList());
-        return new JSONArray(list).toString();
+        return new JSONArray(QueryExecutor.getInstance().getMetrics(params.getDeviceId(), params.getStart(), params.getEnd()));
     }),
     GET_METRICS("GetMetrics", payload -> {
         GetterMetricsMessage params = GetterMetricsMessage.parse(payload);
-        List list = QueryExecutor.getInstance().getMetrics(params.getStart(), params.getEnd()).stream().map(MetricsEntity::toJsonString).collect(Collectors.toList());
-        return new JSONArray(list).toString();
+        return new JSONArray(QueryExecutor.getInstance().getMetrics(params.getStart(), params.getEnd()));
     }),
     ADD_METRICS("telemetry", payload -> {
         AddMetricMessage params = AddMetricMessage.parse(payload);
         log(params.toString());
         QueryExecutor.getInstance().addMetric(params.getMetricValue(), params.getMetricDate(), params.getMacAddress(), params.getDeviceType(), params.getDeviceName(), params.getDeviceId());
-        return "";
+        return null;
     }),
     ADD_DEVICE("registerDevice", payload -> {
         AddDeviceMessage params = AddDeviceMessage.parse(payload);
         log(params.toString());
         QueryExecutor.getInstance().addDevice(params.getDeviceMac(), params.getDeviceModel(), params.getDeviceName(), params.getDeviceUid());
-        return "";
+        return null;
     }),
     LOGIN("login", payload -> {
         LoginUserMessage params = LoginUserMessage.parse(payload);
         log(params.toString());
         QueryExecutor.getInstance().login(params);
-        return "";
+        return null;
     }),
     LINK_DEVICE_USER("LinkDevUser", payload -> {
         QueryExecutor.getInstance().linkDeviceToUser(LinkDeviceUserMessage.parse(payload).getUserUid(), LinkDeviceUserMessage.parse(payload).getDeviceId());
-        return "";
+        return null;
     }),
     NO_ROUTE("", params -> "");
 
     static Logger logger = LoggerFactory.getLogger(Routes.class);
 
     private String name;
-    private Function<Object, String> function;
+    private Function<Object, Object> function;
 
-    Routes(String routeName, Function<Object, String> func) {
+    Routes(String routeName, Function<Object, Object> func) {
         this.name = routeName;
         this.function = func;
     }
@@ -79,7 +72,7 @@ public enum Routes {
         logger.info(message);
     }
 
-    public String execQuery(Object payload) {
+    public Object execQuery(Object payload) {
         try {
             return this.function.apply(payload);
         } catch (Exception e){
