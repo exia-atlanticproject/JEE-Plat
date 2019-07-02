@@ -8,7 +8,7 @@ pipeline {
         dir(path: 'src') {
           sh 'docker login -u jdieuze -p $DOCKER_PASSWORD'
           sh 'docker build --no-cache -t jee-platform .'
-          sh 'docker tag jdieuze/jee-platform:latest'
+          sh 'docker tag jee-platform:latest jdieuze/jee-platform:latest'
           sh 'docker push jdieuze/jee-platform:latest'
         }
 
