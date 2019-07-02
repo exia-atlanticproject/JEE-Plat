@@ -1,5 +1,6 @@
 FROM maven as build
 
+ARG target=api-phone
 
 WORKDIR /usr/src/app
 
@@ -13,5 +14,5 @@ RUN mvn clean install
 
 FROM jetty
 
-COPY --from=build /usr/src/app/java/api-phone/target/webapi-1.0-SNAPSHOT.war /var/lib/jetty/webapps/root.war
+COPY --from=build /usr/src/app/java/$target/target/webapi-1.0-SNAPSHOT.war /var/lib/jetty/webapps/root.war
 EXPOSE 8080
