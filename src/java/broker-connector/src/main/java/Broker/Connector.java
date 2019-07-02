@@ -126,9 +126,9 @@ public class Connector implements MessageListener, ExceptionListener {
     }
 
     private void messageHandler(String message) {
+        JSONObject jsonMsg = new JSONObject(message);
         try {
             logger.info("New message "+message);
-            JSONObject jsonMsg = new JSONObject(message);
             Consumer<MessageModel> call = this.listeners.get(jsonMsg.getString("source"));
             if (onMessageReceived != null) onMessageReceived.accept(new MessageModel(jsonMsg.getString("source"), jsonMsg.getString("action"), jsonMsg.getString("callback"), jsonMsg.get("payload")));
             if (call != null) {
@@ -138,6 +138,11 @@ public class Connector implements MessageListener, ExceptionListener {
         } catch (Throwable e) {
             e.printStackTrace();
             logger.error(String.format("Malformed message: %s", message));
+            try {
+                connector.respond(jsonMsg.getString("callback"), jsonMsg.getString("source"), "{\"action\": \"reply\", \"payload\": {\"res\": \"error\"}}");
+            } catch (JMSException ex) {
+                ex.printStackTrace();
+            }
         }
 
     }
