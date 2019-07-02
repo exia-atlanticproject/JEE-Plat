@@ -6,6 +6,7 @@ import com.auth0.jwt.JWTVerifier;
 import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.interfaces.DecodedJWT;
 import com.crux.demo.api.model.User;
+import com.crux.demo.api.util.BrokerConnector;
 import com.wordnik.swagger.annotations.Api;
 import com.wordnik.swagger.annotations.ApiOperation;
 import com.wordnik.swagger.annotations.ApiResponse;
@@ -46,16 +47,6 @@ import java.util.List;
 @Api(value="/", description = "Operations about user")
 @Produces({"application/json", "application/xml"})
 public class AuthResource {
-
-    static Connector connector = Connector.getInstance();
-
-    static {
-        try {
-            connector.connect("tcp://192.168.0.32:61616");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
 
     static String authorization = "https://atlantisproject.b2clogin.com/atlantisproject.onmicrosoft.com/oauth2/v2.0/authorize?p=b2c_1_signuporsignin";
     static String token = "https://atlantisproject.b2clogin.com/atlantisproject.onmicrosoft.com/oauth2/v2.0/token?p=b2c_1_signuporsignin";
@@ -158,7 +149,7 @@ public class AuthResource {
             userPayload.put("email", "");
             userMessage.put("payload", userPayload);
 
-            connector.emit("Data-Controller", userMessage.toString());
+            BrokerConnector.getConnector().emit("Data-Controller", userMessage.toString());
             return Response.ok().build();
 
         } catch (JSONException e) {

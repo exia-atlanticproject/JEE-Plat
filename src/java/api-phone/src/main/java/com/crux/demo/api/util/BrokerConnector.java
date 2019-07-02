@@ -12,7 +12,7 @@ public class BrokerConnector {
     static {
         try {
             connector = Connector.getInstance();
-            connector.connect("tcp://192.168.0.32:61616");
+            connector.connect("tcp://delia.ovh:61616");
         } catch (Exception e) {
             e.printStackTrace();
         }

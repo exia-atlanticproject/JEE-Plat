@@ -1,0 +1,27 @@
+FROM maven as build
+
+ARG target=api-phone
+
+WORKDIR /usr/src/app
+
+COPY pom.xml .
+#RUN mvn -B -e -C -T 1C org.apache.maven.plugins:maven-dependency-plugin:3.0.2:go-offline
+COPY . .
+
+RUN rm ./java/api-phone/pom.xml
+RUN mv ./java/api-phone/pom.ci.xml ./java/api-phone/pom.xml
+RUN cd ./java/data-controller
+RUN mvn clean install
+
+FROM openjdk:8
+
+COPY --from=build /usr/src/app /var/lib/production
+
+WORKDIR /var/lib/production/java/data-controller/src/main/java/io/controller/
+
+RUN javac main.java
+
+CMD ["java", "main"]
+#CMD "bash -c 'java -jar /var/lib/production/java/data-controller/target/data-controller-1.0.0.jar'"
+
+#EXPOSE 8080
