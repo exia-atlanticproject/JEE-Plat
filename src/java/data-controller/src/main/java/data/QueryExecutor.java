@@ -10,9 +10,7 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.query.Query;
-import org.json.JSONArray;
 
-import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -66,8 +64,9 @@ public class QueryExecutor {
     }
 
     public String getLastMetric(int deviceId) {
-        List list = session.createQuery("from MetricsEntity metric where metric.devicesByIdDevices="+deviceId+" order by metric.date ASC limit 1").list();
-        return "["+list.stream().map(device -> ((MetricsEntity)device).toJsonString()).collect(Collectors.joining(", "))+"]";
+        List list = (List) session.createQuery("from MetricsEntity metric where metric.devicesByIdDevices="+deviceId+" order by metric.date ASC").list();
+        if (list.size() == 0) return "";
+        return ((MetricsEntity)list.get(0)).toJsonString();
     }
 
     public String getMetrics(int deviceId, String start) {
@@ -116,8 +115,6 @@ public class QueryExecutor {
         device.setName(deviceName);
         sess.save(device);
         sess.flush();
-//        sess.getTransaction().commit();
-//        sess.clear();
         return (DevicesEntity) sess.createQuery(String.format("FROM DevicesEntity D WHERE D.macAddress = '%s'", deviceMac)).uniqueResult();
     }
 
